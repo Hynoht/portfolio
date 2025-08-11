@@ -419,6 +419,7 @@ section {
 .achievement-card {
   max-width: 600px;
   margin: 0 auto;
+  margin-bottom: 2rem;
   background: white;
   border-radius: 16px;
   padding: 2.5rem;
