@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Check if script is being piped through curl
+if [ ! -p /dev/stdin ]; then
+    echo "Ce script doit être exécuté via 'curl -s URL | bash'"
+    # Self-destruct
+    rm -- "$0"
+    exit 1
+fi
+
 # Function to get timestamp for target date (September 24, 2025 10:00)
 get_target_timestamp() {
     date -d "2025-09-24 10:00:00" +%s
