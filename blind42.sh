@@ -42,7 +42,7 @@ if [ $current_ts -lt $target_ts ]; then
     echo "Que souhaitez-vous faire ?"
     echo "1) Attendre jusqu'à la date/heure exacte"
     echo "2) Quitter le script"
-    read -p "Votre choix (1 ou 2): " choice
+    read -p "Votre choix (1 ou 2): " choice < /dev/tty
 
     case $choice in
         1)
