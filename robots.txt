@@ -1,0 +1,28 @@
+# Robots.txt for Arthinez Portfolio
+# https://arthinez.netlify.app
+
+# Allow all bots
+User-agent: *
+Allow: /
+
+# Specific disallow rules
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Sitemaps
+Sitemap: https://arthinez.netlify.app/sitemap.xml
+
+# Crawl delay and request rate
+Crawl-delay: 1
+Request-rate: 30/1m
+
+# Google-specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+# Bing-specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
