@@ -11,7 +11,7 @@ Disallow: /*.json$
 Disallow: /*.xml$
 
 # Sitemaps
-Sitemap: https://arthinez.netlify.app/sitemap.xml
+Sitemap: https://arthinez.netlify.app/sitemap_arthinez.xml
 
 # Crawl delay and request rate
 Crawl-delay: 1
