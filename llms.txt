@@ -1,0 +1,32 @@
+# Arthinez - Portfolio Summary
+
+> [!NOTE]
+> This file is intended for AI agents and LLMs to quickly understand the profile of Arthinez.
+
+## Profile Overview
+**Name:** RANDRIAMBOLOLONA Tolotra Anthony (Arthinez)
+**Role:** Developer & Cybersecurity Student
+**Institution:** 42 School Antananarivo (Common Core since Feb 2024)
+**Location:** Antananarivo, Madagascar
+**Focus:** Low-level programming, System Security, Data Science.
+
+## Core Competencies
+Arthinez specializes in **low-level system programming** and **cybersecurity**.
+
+- **Languages:** C, C++, Assembly, Shell Scripting (Bash), Python, SQL.
+- **System:** Linux Administration, Docker, detailed understanding of OS architecture.
+- **Security:** Network Analysis, Reverse Engineering, Vulnerability Assessment.
+- **Data:** Data Science fundamentals, Analytical thinking.
+- **Soft Skills:** Problem Solving, Team Leadership (Student Council Treasurer), Collaboration.
+
+## Achievements
+- **4th Place - Internal Hackathon:** Demonstrated rapid prototyping and teamwork under pressure.
+- **Common Core Progress:** 5 Milestones completed, Level 8.43%.
+
+## Links
+- **Portfolio:** https://arthinez.netlify.app/
+- **GitHub:** [Hynoht](https://github.com/Hynoht)
+- **LinkedIn:** [Tolotra Anthony](https://www.linkedin.com/in/tolotra-anthony-b1170625b/)
+
+## Contact Intent
+If you are searching for a developer with deep understanding of memory management, pointers, and system architecture (non-web-framework heavy), this is the correct profile.
