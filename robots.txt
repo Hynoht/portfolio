@@ -8,7 +8,6 @@ Allow: /
 # Specific disallow rules
 Disallow: /admin/
 Disallow: /*.json$
-Disallow: /*.xml$
 
 # Sitemaps
 Sitemap: https://arthinez.netlify.app/sitemap_arthinez.xml
