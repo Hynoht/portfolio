@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO & Meta Tags -->
-    <title>Arthinez - 42 School Developer & Cybersecurity Student</title>
+    <title>Portfolio | RANDRIAMBOLOLONA Tolotra Anthony</title>
     <meta name="description"
-        content="Arthinez is a 42 School student specializing in cybersecurity and data science. Explore my portfolio, projects, and technical skills.">
+        content="RANDRIAMBOLOLONA Tolotra Anthony, étudiant à la 42 Antananarivo spécialisé en cybersécurité et data science. Découvrez mon portfolio, mes projets et compétences techniques.">
     <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
+    <meta name="language" content="French">
     <meta name="author" content="RANDRIAMBOLOLONA Tolotra Anthony">
     <meta name="keywords"
-        content="developer, cybersecurity, 42 school, data science, Madagascar, Low level, Bas niveau, System programming, C, C++, Assembly, Network Security, Reverse Engineering">
+        content="randriambololona tolotra anthony, arthinez, développeur, cybersécurité, 42 Antananarivo, data science, Madagascar, Antananarivo, Low level, Bas niveau, Programmation système, C, C++, Sécurité réseau, Reverse Engineering">
+
+    <!-- Hreflang for SEO -->
+    <link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/" />
+    <link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/" />
+    <link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/" />
 
     <!-- Open Graph Tags (Social Media) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://arthinez.netlify.app/">
-    <meta property="og:title" content="Arthinez - 42 School Developer & Cybersecurity Specialist">
+    <meta property="og:title" content="Arthinez - Développeur 42 Antananarivo & Spécialiste Cybersécurité">
     <meta property="og:description"
-        content="Passionate developer at 42 School Antananarivo, specializing in cybersecurity and data science. Discover my projects and technical journey.">
+        content="Développeur passionné à la 42 Antananarivo Antananarivo, spécialisé en cybersécurité et data science. Découvrez mes projets et mon parcours technique.">
     <meta property="og:image" content="https://arthinez.netlify.app/image/image.jpg">
-    <meta property="og:image:alt" content="Arthinez - 42 School Student Developer">
-    <meta property="og:site_name" content="Arthinez Portfolio">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:image:alt" content="Arthinez - Étudiant Développeur 42 Antananarivo">
+    <meta property="og:site_name" content="Portfolio Arthinez">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale:alternate" content="en_US">
 
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Arthinez - 42 School Developer & Cybersecurity Specialist">
+    <meta name="twitter:title" content="Arthinez - Développeur 42 Antananarivo & Spécialiste Cybersécurité">
     <meta name="twitter:description"
-        content="Passionate developer specializing in cybersecurity and data science. Currently studying at 42 School Antananarivo.">
+        content="Développeur passionné spécialisé en cybersécurité et data science. Actuellement étudiant à la 42 Antananarivo Antananarivo.">
     <meta name="twitter:image" content="https://arthinez.netlify.app/image/image.jpg">
-    <meta name="twitter:image:alt" content="Arthinez - 42 School Student Developer">
+    <meta name="twitter:image:alt" content="Arthinez - Étudiant Développeur 42 Antananarivo">
     <meta name="twitter:creator" content="@ArthynezDev">
 
     <!-- Canonical URL -->
@@ -42,21 +48,22 @@
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
 
-    <!-- Stylesheets -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZKPQMJDSKW"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    <!-- Preload critical resources for better performance -->
+    <link rel="preload" href="css/fonts.css" as="style">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/inter-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="image/image.webp" as="image" type="image/webp">
 
-        gtag('config', 'G-ZKPQMJDSKW');
-    </script>
+    <!-- Stylesheets (self-hosted fonts, no render-blocking third-party requests) -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- 
+        Google Analytics removed to avoid third-party cookies
+        Alternative: Use Plausible Analytics (https://plausible.io/) or Umami (https://umami.is/)
+        or implement a cookie consent banner before loading analytics
+    -->
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
@@ -66,22 +73,22 @@
       "jobTitle": "Full-Stack Developer & Cybersecurity Specialist",
       "affiliation": {
         "@type": "EducationalOrganization",
-        "name": "42 School Antananarivo",
+        "name": "42 Antananarivo Antananarivo",
         "url": "https://www.42network.org/"
       },
       "image": "https://arthinez.netlify.app/image/image.jpg",
-      "description": "Passionate student at 42 School Antananarivo, focusing on cybersecurity and data science with skills in Linux, C, C++, and Docker.",
+      "description": "Passionate student at 42 Antananarivo Antananarivo, focusing on cybersecurity and data science with skills in Linux, C, C++, and Docker.",
       "url": "https://arthinez.netlify.app/",
       "sameAs": [
         "https://github.com/Hynoht",
-        "https://www.linkedin.com/in/tolotra-anthony-b1170625b/",
-        "https://www.facebook.com/Arthy.44/"
+        "https://www.linkedin.com/in/tolotra-anthony/",
+        "https://www.facebook.com/arthinez/"
       ],
       "knowsLanguage": ["English", "French", "Malagasy"],
       "skills": ["Cybersecurity", "Data Science", "Linux", "C Programming", "C++", "Docker", "Problem Solving", "Team Leadership", "System Programming", "Low Level Optimization", "Network Analysis"],
       "worksFor": {
         "@type": "Organization",
-        "name": "42 School Antananarivo"
+        "name": "42 Antananarivo Antananarivo"
       },
       "address": {
         "@type": "PostalAddress",
@@ -100,64 +107,125 @@
 </head>
 
 <body>
+    <!-- Load SVG icons sprite -->
+    <div style="display: none;">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <!-- GitHub -->
+            <symbol id="icon-github" viewBox="0 0 496 512">
+                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+            </symbol>
+            <!-- LinkedIn -->
+            <symbol id="icon-linkedin" viewBox="0 0 448 512">
+                <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+            </symbol>
+            <!-- Facebook -->
+            <symbol id="icon-facebook" viewBox="0 0 512 512">
+                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+            </symbol>
+            <!-- Code -->
+            <symbol id="icon-code" viewBox="0 0 640 512">
+                <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/>
+            </symbol>
+            <!-- Download -->
+            <symbol id="icon-download" viewBox="0 0 512 512">
+                <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/>
+            </symbol>
+            <!-- User -->
+            <symbol id="icon-user" viewBox="0 0 448 512">
+                <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
+            </symbol>
+            <!-- Chart Bar -->
+            <symbol id="icon-chart-bar" viewBox="0 0 512 512">
+                <path d="M32 32c17.7 0 32 14.3 32 32V400c0 8.8 7.2 16 16 16H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H80c-44.2 0-80-35.8-80-80V64C0 46.3 14.3 32 32 32zm96 96c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H160c-17.7 0-32-14.3-32-32V128zM320 192h64c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H320c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z"/>
+            </symbol>
+            <!-- Trophy -->
+            <symbol id="icon-trophy" viewBox="0 0 576 512">
+                <path d="M400 0H176c-26.5 0-48.1 21.8-47.1 48.2c.2 5.3 .4 10.6 .7 15.8H24C10.7 64 0 74.7 0 88c0 92.6 33.5 157 78.5 200.7c44.3 43.1 98.3 64.8 138.1 75.8c23.4 6.5 39.4 26 39.4 45.6c0 20.9-17 37.9-37.9 37.9H192c-17.7 0-32 14.3-32 32s14.3 32 32 32H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H358.9c-20.9 0-37.9-17-37.9-37.9c0-19.6 15.9-39.2 39.4-45.6c39.9-11 93.9-32.7 138.2-75.8C542.5 245 576 180.6 576 88c0-13.3-10.7-24-24-24H446.4c.3-5.2 .5-10.4 .7-15.8C448.1 21.8 426.5 0 400 0zM48.9 112h84.4c9.1 90.1 29.2 150.3 51.9 190.6c-24.9-11-50.8-26.5-73.2-48.3c-32-31.1-58-76-63-142.3zM464.1 254.3c-22.4 21.8-48.3 37.3-73.2 48.3c22.7-40.3 42.8-100.5 51.9-190.6h84.4c-5.1 66.3-31.1 111.2-63 142.3z"/>
+            </symbol>
+            <!-- External Link -->
+            <symbol id="icon-external-link" viewBox="0 0 512 512">
+                <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/>
+            </symbol>
+            <!-- Briefcase -->
+            <symbol id="icon-briefcase" viewBox="0 0 512 512">
+                <path d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/>
+            </symbol>
+        </svg>
+    </div>
+
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link" data-i18n="skip">Aller au contenu principal</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-code"></i>
+                <svg class="icon" aria-hidden="true"><use href="#icon-code"></use></svg>
                 <span>Arthinez</span>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#stats" class="nav-link">Stats</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <ul class="nav-menu" role="menubar" aria-label="Main menu">
+                <li role="none"><a href="#about" class="nav-link" role="menuitem" data-i18n="about">À propos</a></li>
+                <li role="none"><a href="#experience" class="nav-link" role="menuitem" data-i18n="experience">Expérience</a></li>
+                <li role="none"><a href="#stats" class="nav-link" role="menuitem" data-i18n="stats">Statistiques</a></li>
+                <li role="none"><a href="#skills" class="nav-link" role="menuitem" data-i18n="skills">Compétences</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem" data-i18n="projects">Projets</a></li>
             </ul>
-            <div class="social-links">
-                <a href="https://github.com/Hynoht" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
+                <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+            </div>
+            <div class="social-links" role="navigation" aria-label="Social media links" data-i18n-aria="ariaSocialNav">
+                <a href="https://github.com/Hynoht" target="_blank" rel="noopener noreferrer" aria-label="Visiter mon profil GitHub" data-i18n-aria="ariaGithub">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
                 </a>
-                <a href="https://www.linkedin.com/in/tolotra-anthony-b1170625b/" target="_blank"
-                    rel="noopener noreferrer">
-                    <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/tolotra-anthony/" target="_blank"
+                    rel="noopener noreferrer" aria-label="Visiter mon profil LinkedIn" data-i18n-aria="ariaLinkedin">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg>
                 </a>
-                <a href="https://www.facebook.com/Arthy.44/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-facebook"></i>
+                <a href="https://www.facebook.com/arthinez/" target="_blank" rel="noopener noreferrer" aria-label="Visiter ma page Facebook" data-i18n-aria="ariaFacebook">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-facebook"></use></svg>
                 </a>
             </div>
-            <div class="hamburger">
+            <button class="hamburger" aria-label="Basculer le menu de navigation" data-i18n-aria="ariaToggleMenu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <main id="main-content">
+    <section class="hero" aria-label="Introduction">
         <div class="container">
             <div class="hero-content">
                 <div class="profile-image">
-                    <img src="/image/image.jpg" alt="Arthinez Profile" class="profile-img">
+                    <picture>
+                        <source srcset="/image/image.webp" type="image/webp">
+                        <img src="/image/image.jpg" alt="Arthinez, a student at 42 Antananarivo, portrait photo" class="profile-img" width="200" height="267" loading="eager" fetchpriority="high">
+                    </picture>
                 </div>
                 <h1 class="hero-title">
-                    Hello, my name is <span class="accent">Arthinez</span>
+                    <span data-i18n="hello">Bonjour, je m'appelle</span> <span class="accent">Tolotra Anthony RANDRIAMBOLOLONA</span>
                 </h1>
-                <p class="hero-subtitle">Student at <strong>42 School</strong></p>
-                <p class="hero-description">
-                    I'm driven by curiosity, continuous learning, and the ambition to contribute meaningfully to
-                    tomorrow's digital world.
+                <p class="hero-subtitle"><span data-i18n="studentAt">Étudiant à</span> <strong>42 Antananarivo</strong></p>
+                <p class="hero-description" data-i18n="heroDesc">
+                    Je suis motivé par la curiosité, l'apprentissage continu et l'ambition de contribuer de manière significative au monde numérique de demain.
                 </p>
                 <div class="hero-buttons">
                     <a href="https://github.com/Hynoht" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-primary">
-                        <i class="fab fa-github"></i>
-                        GitHub
+                        class="btn btn-primary" aria-label="Visiter mon profil GitHub" data-i18n-aria="ariaGithub">
+                        <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
+                        <span data-i18n="github">GitHub</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/tolotra-anthony-b1170625b/" target="_blank"
-                        rel="noopener noreferrer" class="btn btn-outline">
-                        <i class="fab fa-linkedin"></i>
-                        LinkedIn
+                    <a href="https://www.linkedin.com/in/tolotra-anthony/" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-outline" aria-label="Visiter mon profil LinkedIn" data-i18n-aria="ariaLinkedin">
+                        <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg>
+                        <span data-i18n="linkedin">LinkedIn</span>
+                    </a>
+                    <a href="assets/cv_anthony.pdf" download class="btn btn-outline" aria-label="Télécharger mon CV au format PDF" data-i18n-aria="ariaDownloadCV">
+                        <svg class="icon" aria-hidden="true"><use href="#icon-download"></use></svg>
+                        <span data-i18n="downloadCV">Télécharger CV</span>
                     </a>
                 </div>
             </div>
@@ -165,44 +233,109 @@
     </section>
 
     <!-- About Me Section -->
-    <section id="about" class="about">
+    <section id="about" class="about" aria-labelledby="about-title">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">
-                    <i class="fas fa-user"></i>
-                    About Me
+                <h2 class="section-title" id="about-title">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-user"></use></svg>
+                    <span data-i18n="aboutTitle">À propos de moi</span>
                 </h2>
-                <p class="section-subtitle">Get to know more about my journey and interests</p>
+                <p class="section-subtitle" data-i18n="aboutSubtitle">Apprenez-en davantage sur mon parcours et mes centres d'intérêt</p>
             </div>
 
             <div class="about-card">
                 <div class="card-header">
-                    <h3 class="card-title">My Journey at 42 School</h3>
-                    <p class="card-subtitle">Currently in the Common Core since February 2024</p>
+                    <h3 class="card-title" data-i18n="journeyTitle">Mon parcours à la 42 Antananarivo</h3>
+                    <p class="card-subtitle" data-i18n="journeySubtitle">Actuellement dans le Tronc Commun depuis février 2024</p>
                 </div>
                 <div class="card-content">
                     <div class="about-grid">
                         <div class="about-section">
-                            <h4>Focus Areas</h4>
+                            <h4 data-i18n="focusAreas">Domaines d'intérêt</h4>
                             <div class="focus-item">
                                 <div class="bullet"></div>
-                                <p><strong>Cybersecurity:</strong> Passionate about protecting systems and information
+                                <p><strong data-i18n="cybersecurity">Cybersécurité</strong>: <span data-i18n="cybersecurityDesc">Passionné par la protection des systèmes et des informations</span>
                                 </p>
                             </div>
                             <div class="focus-item">
                                 <div class="bullet"></div>
-                                <p><strong>Data Science:</strong> Growing interest in combining technical skills with
-                                    analytical thinking to extract insights from data</p>
+                                <p><strong data-i18n="dataScience">Data Science</strong>: <span data-i18n="dataScienceDesc">Intérêt croissant pour la combinaison de compétences techniques et de pensée analytique pour extraire des informations à partir des données</span></p>
                             </div>
                         </div>
                         <div class="about-section">
-                            <h4>Leadership</h4>
+                            <h4 data-i18n="formation">Formation</h4>
                             <div class="focus-item">
                                 <div class="bullet"></div>
-                                <p><strong>Treasurer of the Student Council (BDE):</strong> Responsible for clear and
-                                    effective financial management</p>
+                                <p><strong>École 42 Antananarivo</strong>: <span data-i18n="formation42">Tronc Commun depuis février 2024</span></p>
+                            </div>
+                            <div class="focus-item">
+                                <div class="bullet"></div>
+                                <p><strong>Axian University</strong>: <span data-i18n="formationAxian">Certification "Concevoir et animer des Formations" (Juillet 2024)</span></p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience" aria-labelledby="experience-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="experience-title">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-briefcase"></use></svg>
+                    <span data-i18n="experienceTitle">Expérience professionnelle</span>
+                </h2>
+                <p class="section-subtitle" data-i18n="experienceSubtitle">Mes expériences et engagements</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Formateur Grandir Dignement -->
+                <div class="experience-card">
+                    <div class="experience-date" data-i18n="exp1Date">Décembre 2025 - Janvier 2026</div>
+                    <div class="experience-content">
+                        <h3 class="experience-title" data-i18n="exp1Title">Formateur - Grandir Dignement Madagascar</h3>
+                        <p class="experience-company">42 Antananarivo</p>
+                        <p class="experience-description" data-i18n="exp1Desc">
+                            Animation de deux formations numériques (informatique, Internet, IA, prompting et éthique) pour une quinzaine de jeunes. Projet à impact social.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Responsable Communication BDE -->
+                <div class="experience-card">
+                    <div class="experience-date" data-i18n="exp2Date">Mars 2025 - Présent</div>
+                    <div class="experience-content">
+                        <h3 class="experience-title" data-i18n="exp2Title">Responsable communication</h3>
+                        <p class="experience-company" data-i18n="exp2Company">Bureau des étudiants (BDE) - 42 Antananarivo</p>
+                        <p class="experience-description" data-i18n="exp2Desc">
+                            Communication interne entre le BDE et les étudiants, ainsi que gestion des réseaux sociaux du BDE.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Formateur Parklife -->
+                <div class="experience-card">
+                    <div class="experience-date" data-i18n="exp3Date">Novembre 2024 - Juillet 2025</div>
+                    <div class="experience-content">
+                        <h3 class="experience-title" data-i18n="exp3Title">Formateur - Parklife</h3>
+                        <p class="experience-company">42 Antananarivo</p>
+                        <p class="experience-description" data-i18n="exp3Desc">
+                            Animation de deux formations informatiques pour 130 collaborateurs de Parklife : initiation aux outils numériques puis approfondissement pour renforcer leur autonomie.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Trésorier BDE -->
+                <div class="experience-card">
+                    <div class="experience-date" data-i18n="exp4Date">Mars 2024 - Présent</div>
+                    <div class="experience-content">
+                        <h3 class="experience-title" data-i18n="exp4Title">Trésorier et Organisateur d'événements</h3>
+                        <p class="experience-company" data-i18n="exp4Company">Bureau des étudiants (BDE) - 42 Antananarivo</p>
+                        <p class="experience-description" data-i18n="exp4Desc">
+                            Gestion des finances du BDE avec transparence pour réaliser des projets et offrir aux étudiants des événements et services de qualité (sorties, ateliers, conférences).
+                        </p>
                     </div>
                 </div>
             </div>
@@ -210,52 +343,52 @@
     </section>
 
     <!-- Learning Statistics -->
-    <section id="stats" class="stats">
+    <section id="stats" class="stats" aria-labelledby="stats-title">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">
-                    <i class="fas fa-chart-bar"></i>
-                    Learning Statistics
+                <h2 class="section-title" id="stats-title">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-chart-bar"></use></svg>
+                    <span data-i18n="statsTitle">Statistiques d'apprentissage</span>
                 </h2>
-                <p class="section-subtitle">My progress at 42 School</p>
+                <p class="section-subtitle" data-i18n="statsSubtitle">Ma progression à la 42 Antananarivo</p>
             </div>
 
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-number">1+</div>
-                    <div class="stat-label">Years</div>
-                    <div class="stat-description">Common Core experience</div>
+                    <div class="stat-label" data-i18n="years">Années</div>
+                    <div class="stat-description" data-i18n="yearsDesc">Expérience Tronc Commun</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">5</div>
-                    <div class="stat-label">Milestones</div>
-                    <div class="stat-description">Completed milestones</div>
+                    <div class="stat-label" data-i18n="milestones">Jalons</div>
+                    <div class="stat-description" data-i18n="milestonesDesc">Jalons complétés</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">8.43%</div>
-                    <div class="stat-label">Overall Level</div>
-                    <div class="progress-bar">
+                    <div class="stat-label" data-i18n="overallLevel">Niveau global</div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="8.43" aria-valuemin="0" aria-valuemax="100" aria-label="Progression du niveau global" data-i18n-aria="levelProgress">
                         <div class="progress-fill" style="width: 8.43%;"></div>
                     </div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">8.1K</div>
-                    <div class="stat-label">Total Score</div>
-                    <div class="stat-description">Points earned</div>
+                    <div class="stat-label" data-i18n="totalScore">Score total</div>
+                    <div class="stat-description" data-i18n="pointsEarned">Points gagnés</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills" aria-labelledby="skills-title">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">
-                    <i class="fas fa-code"></i>
-                    Skills
+                <h2 class="section-title" id="skills-title">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-code"></use></svg>
+                    <span data-i18n="skillsTitle">Compétences</span>
                 </h2>
-                <p class="section-subtitle">Technologies and tools I work with</p>
+                <p class="section-subtitle" data-i18n="skillsSubtitle">Technologies et outils que j'utilise</p>
             </div>
 
             <div class="skills-container">
@@ -270,72 +403,112 @@
         </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
+    <!-- Projects Section -->
+    <section id="projects" class="projects" aria-labelledby="projects-title">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">
-                    <i class="fas fa-trophy"></i>
-                    Achievements
+                <h2 class="section-title" id="projects-title">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-code"></use></svg>
+                    <span data-i18n="projectsTitle">Projets réalisés</span>
                 </h2>
-                <p class="section-subtitle">Notable accomplishments and recognitions</p>
+                <p class="section-subtitle" data-i18n="projectsSubtitle">Mes projets techniques et créatifs</p>
             </div>
 
-            <div class="achievement-card">
-                <div class="achievement-header">
-                    <h3 class="achievement-title">
-                        <i class="fas fa-trophy trophy-icon"></i>
-                        4th Place - Internal Hackathon
-                    </h3>
-                    <p class="achievement-description">
-                        Demonstrated problem-solving skills and teamwork in a competitive environment
+            <div class="projects-grid">
+                <!-- Transcendence -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title" data-i18n="project1Title">Transcendence</h3>
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Fastify</span>
+                            <span class="tag">Prisma</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                    <p class="project-description" data-i18n="project1Desc">
+                        Projet de site immobilier : développement d'APIs sécurisées avec authentification, gestion des utilisateurs, des réservations et d'un système de crédits.
                     </p>
                 </div>
-                <div class="achievement-content">
-                    <a href="https://hackathon42.netlify.app/" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-outline">
-                        <i class="fas fa-external-link-alt"></i>
-                        View Hackathon Details
-                    </a>
-                </div>
-            </div>
 
-            <div class="achievement-card">
-                <div class="achievement-header">
-                    <h3 class="achievement-title">
-                        <i class="fas fa-trophy trophy-icon"></i>
-                        HOMER SIMPSON AWARD
-                    </h3>
-                    <p class="achievement-description">
-                        Best project pitch at the stupid Hackathon.
+                <!-- Webserv -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title" data-i18n="project2Title">Webserv</h3>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">HTTP/1.1</span>
+                            <span class="tag">Server</span>
+                        </div>
+                    </div>
+                    <p class="project-description" data-i18n="project2Desc">
+                        Création d'un serveur HTTP/1.1 en C++ prenant en charge les méthodes GET, POST et DELETE.
+                    </p>
+                </div>
+
+                <!-- Inception -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title" data-i18n="project3Title">Inception</h3>
+                        <div class="project-tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                    </div>
+                    <p class="project-description" data-i18n="project3Desc">
+                        Virtualisation de plusieurs conteneurs Docker en créant mes propres images personnalisées, sans recourir à celles du Docker Hub.
                     </p>
                 </div>
             </div>
 
+            <!-- Achievements subsection -->
+            <div class="achievements-subsection">
+                <h3 class="subsection-title" data-i18n="achievementsTitle">Réalisations notables</h3>
+                <div class="achievements-list">
+                    <div class="achievement-item">
+                        <svg class="icon trophy-icon" aria-hidden="true"><use href="#icon-trophy"></use></svg>
+                        <div>
+                            <strong data-i18n="hackathon4th">4ème place - Hackathon Interne</strong>
+                            <p data-i18n="hackathon4thDesc">Démonstration de compétences en résolution de problèmes et travail d'équipe dans un environnement compétitif</p>
+                            <a href="https://hackathon42.netlify.app/" target="_blank" rel="noopener noreferrer" class="achievement-link" data-i18n="viewDetails">Voir les détails →</a>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <svg class="icon trophy-icon" aria-hidden="true"><use href="#icon-trophy"></use></svg>
+                        <div>
+                            <strong data-i18n="homerAward">PRIX HOMER SIMPSON</strong>
+                            <p data-i18n="homerAwardDesc">Meilleur pitch de projet au Hackathon stupide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Arthinez.</p>
-                <div class="footer-social">
-                    <a href="https://github.com/Hynoht" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i>
+                <p data-i18n="copyright">© 2025 Arthinez.</p>
+                <div class="footer-social" role="navigation" aria-label="Liens réseaux sociaux du pied de page" data-i18n-aria="ariaFooterSocial">
+                    <a href="https://github.com/Hynoht" target="_blank" rel="noopener noreferrer" aria-label="Visiter mon profil GitHub" data-i18n-aria="ariaGithub">
+                        <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/tolotra-anthony-b1170625b/" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/tolotra-anthony/" target="_blank"
+                        rel="noopener noreferrer" aria-label="Visiter mon profil LinkedIn" data-i18n-aria="ariaLinkedin">
+                        <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg>
                     </a>
-                    <a href="https://www.facebook.com/Arthy.44/" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-facebook"></i>
+                    <a href="https://www.facebook.com/arthinez/" target="_blank" rel="noopener noreferrer" aria-label="Visiter ma page Facebook" data-i18n-aria="ariaFacebook">
+                        <svg class="icon" aria-hidden="true"><use href="#icon-facebook"></use></svg>
                     </a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="css/i18n.js"></script>
     <script src="css/script.js"></script>
 </body>
 

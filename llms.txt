@@ -6,7 +6,7 @@
 ## Profile Overview
 **Name:** RANDRIAMBOLOLONA Tolotra Anthony (Arthinez)
 **Role:** Developer & Cybersecurity Student
-**Institution:** 42 School Antananarivo (Common Core since Feb 2024)
+**Institution:** 42 Antananarivo Antananarivo (Common Core since Feb 2024)
 **Location:** Antananarivo, Madagascar
 **Focus:** Low-level programming, System Security, Data Science.
 

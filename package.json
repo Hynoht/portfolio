@@ -1,0 +1,24 @@
+{
+  "name": "arthinez-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Arthinez - 42 Antananarivo Student",
+  "scripts": {
+    "minify:css": "cleancss -o css/styles.min.css css/styles.css",
+    "minify:js": "terser css/script.js -o css/script.min.js -c -m",
+    "minify": "npm run minify:css && npm run minify:js",
+    "build": "npm run minify",
+    "watch:css": "cleancss -o css/styles.min.css css/styles.css --watch",
+    "dev": "npm run build"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "terser": "^5.27.0"
+  },
+  "keywords": [
+    "portfolio",
+    "42-Antananarivo",
+    "cybersecurity"
+  ],
+  "author": "RANDRIAMBOLOLONA Tolotra Anthony",
+  "license": "MIT"
+}

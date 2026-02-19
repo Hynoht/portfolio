@@ -6,9 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (hamburger) {
     hamburger.addEventListener("click", () => {
+      const isExpanded = hamburger.getAttribute("aria-expanded") === "true"
+      
       hamburger.classList.toggle("active")
       navMenu.classList.toggle("active")
       socialLinks.classList.toggle("active")
+      
+      // Update aria-expanded for accessibility
+      hamburger.setAttribute("aria-expanded", !isExpanded)
     })
   }
 
@@ -19,6 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
       hamburger.classList.remove("active")
       navMenu.classList.remove("active")
       socialLinks.classList.remove("active")
+      
+      // Reset aria-expanded when closing menu
+      hamburger.setAttribute("aria-expanded", "false")
     })
   })
 
