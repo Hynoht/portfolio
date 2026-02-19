@@ -239,23 +239,26 @@ function updateMetaTags(lang) {
   const ogLocale = document.querySelector('meta[property="og:locale"]');
   const twitterTitle = document.querySelector('meta[name="twitter:title"]');
   const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+  const pageTitle = document.querySelector('title');
   
   if (lang === 'fr') {
-    if (metaDesc) metaDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony, étudiant à la 42 Antananarivo spécialisé en cybersécurité et data science. Découvrez mon portfolio, mes projets et compétences techniques.');
+    if (pageTitle) pageTitle.textContent = 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - Étudiant 42 Antananarivo';
+    if (metaDesc) metaDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), étudiant 42 Antananarivo spécialisé en cybersécurité et data science. Portfolio, projets et compétences techniques.');
     if (metaLang) metaLang.setAttribute('content', 'French');
-    if (ogTitle) ogTitle.setAttribute('content', 'Arthinez - Développeur 42 Antananarivo & Spécialiste Cybersécurité');
-    if (ogDesc) ogDesc.setAttribute('content', 'Développeur passionné à la 42 Antananarivo Antananarivo, spécialisé en cybersécurité et data science. Découvrez mes projets et mon parcours technique.');
+    if (ogTitle) ogTitle.setAttribute('content', 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - Étudiant 42 Antananarivo');
+    if (ogDesc) ogDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), étudiant 42 Antananarivo. Découvrez mes projets en cybersécurité, data science et développement.');
     if (ogLocale) ogLocale.setAttribute('content', 'fr_FR');
-    if (twitterTitle) twitterTitle.setAttribute('content', 'Arthinez - Développeur 42 Antananarivo & Spécialiste Cybersécurité');
-    if (twitterDesc) twitterDesc.setAttribute('content', 'Développeur passionné spécialisé en cybersécurité et data science. Actuellement étudiant à la 42 Antananarivo Antananarivo.');
+    if (twitterTitle) twitterTitle.setAttribute('content', 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - Étudiant 42 Antananarivo');
+    if (twitterDesc) twitterDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), étudiant 42 Antananarivo spécialisé en cybersécurité et data science.');
   } else {
-    if (metaDesc) metaDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony is a 42 Antananarivo student specializing in cybersecurity and data science. Explore my portfolio, projects, and technical skills.');
+    if (pageTitle) pageTitle.textContent = 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - 42 Antananarivo Student';
+    if (metaDesc) metaDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez) is a 42 Antananarivo student specializing in cybersecurity and data science. Portfolio, projects, and technical skills.');
     if (metaLang) metaLang.setAttribute('content', 'English');
-    if (ogTitle) ogTitle.setAttribute('content', 'Arthinez - 42 Antananarivo Developer & Cybersecurity Specialist');
-    if (ogDesc) ogDesc.setAttribute('content', 'Passionate developer at 42 Antananarivo Antananarivo, specializing in cybersecurity and data science. Discover my projects and technical journey.');
+    if (ogTitle) ogTitle.setAttribute('content', 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - 42 Antananarivo Student');
+    if (ogDesc) ogDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), 42 Antananarivo student. Discover my projects in cybersecurity, data science and development.');
     if (ogLocale) ogLocale.setAttribute('content', 'en_US');
-    if (twitterTitle) twitterTitle.setAttribute('content', 'Arthinez - 42 Antananarivo Developer & Cybersecurity Specialist');
-    if (twitterDesc) twitterDesc.setAttribute('content', 'Passionate developer specializing in cybersecurity and data science. Currently studying at 42 Antananarivo Antananarivo.');
+    if (twitterTitle) twitterTitle.setAttribute('content', 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - 42 Antananarivo Student');
+    if (twitterDesc) twitterDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), 42 Antananarivo student specializing in cybersecurity and data science.');
   }
 }
 

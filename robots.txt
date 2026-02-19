@@ -10,6 +10,7 @@ Disallow: /admin/
 Disallow: /*.json$
 
 # Sitemaps
+Sitemap: https://arthinez.netlify.app/sitemap.xml
 Sitemap: https://arthinez.netlify.app/sitemap_arthinez.xml
 
 # Crawl delay and request rate
