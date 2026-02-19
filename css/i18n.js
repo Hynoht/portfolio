@@ -243,22 +243,22 @@ function updateMetaTags(lang) {
   
   if (lang === 'fr') {
     if (pageTitle) pageTitle.textContent = 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - Étudiant 42 Antananarivo';
-    if (metaDesc) metaDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), étudiant 42 Antananarivo spécialisé en cybersécurité et data science. Portfolio, projets et compétences techniques.');
+    if (metaDesc) metaDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), étudiant 42 Antananarivo passionné par la cybersécurité et la data science. Portfolio, projets et compétences techniques.');
     if (metaLang) metaLang.setAttribute('content', 'French');
     if (ogTitle) ogTitle.setAttribute('content', 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - Étudiant 42 Antananarivo');
     if (ogDesc) ogDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), étudiant 42 Antananarivo. Découvrez mes projets en cybersécurité, data science et développement.');
     if (ogLocale) ogLocale.setAttribute('content', 'fr_FR');
     if (twitterTitle) twitterTitle.setAttribute('content', 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - Étudiant 42 Antananarivo');
-    if (twitterDesc) twitterDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), étudiant 42 Antananarivo spécialisé en cybersécurité et data science.');
+    if (twitterDesc) twitterDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), étudiant 42 Antananarivo passionné par la cybersécurité et la data science.');
   } else {
     if (pageTitle) pageTitle.textContent = 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - 42 Antananarivo Student';
-    if (metaDesc) metaDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez) is a 42 Antananarivo student specializing in cybersecurity and data science. Portfolio, projects, and technical skills.');
+    if (metaDesc) metaDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez) is a 42 Antananarivo student passionate about cybersecurity and data science. Portfolio, projects, and technical skills.');
     if (metaLang) metaLang.setAttribute('content', 'English');
     if (ogTitle) ogTitle.setAttribute('content', 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - 42 Antananarivo Student');
     if (ogDesc) ogDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), 42 Antananarivo student. Discover my projects in cybersecurity, data science and development.');
     if (ogLocale) ogLocale.setAttribute('content', 'en_US');
     if (twitterTitle) twitterTitle.setAttribute('content', 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - 42 Antananarivo Student');
-    if (twitterDesc) twitterDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), 42 Antananarivo student specializing in cybersecurity and data science.');
+    if (twitterDesc) twitterDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), 42 Antananarivo student passionate about cybersecurity and data science.');
   }
 }
 
