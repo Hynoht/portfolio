@@ -1,28 +1,38 @@
 # Robots.txt for Arthinez Portfolio
 # https://arthinez.netlify.app
 
-# Allow all bots
+# All bots welcome
 User-agent: *
 Allow: /
+Disallow: /blind42.sh
 
-# Specific disallow rules
-Disallow: /admin/
-Disallow: /*.json$
+# AI / LLM crawlers explicitly welcome (GEO)
+User-agent: GPTBot
+Allow: /
 
-# Sitemaps
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Sitemap
 Sitemap: https://arthinez.netlify.app/sitemap.xml
-Sitemap: https://arthinez.netlify.app/sitemap_arthinez.xml
 
-# Crawl delay and request rate
-Crawl-delay: 1
-Request-rate: 30/1m
-
-# Google-specific
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0.5
-
-# Bing-specific
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
+# LLM-friendly summary
+# See also: https://arthinez.netlify.app/llms.txt

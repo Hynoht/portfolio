@@ -52,52 +52,65 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", () => {
     const navbar = document.querySelector(".navbar")
     if (window.scrollY > 50) {
-      navbar.style.background = "rgba(255, 255, 255, 0.98)"
-      navbar.style.boxShadow = "0 2px 20px rgba(0, 0, 0, 0.1)"
+      navbar.style.background = "rgba(2, 6, 23, 0.98)"
+      navbar.style.boxShadow = "0 2px 20px rgba(0, 0, 0, 0.5)"
     } else {
-      navbar.style.background = "rgba(255, 255, 255, 0.95)"
+      navbar.style.background = "rgba(2, 6, 23, 0.85)"
       navbar.style.boxShadow = "none"
     }
   })
 
-  // Animate progress bar on scroll
-  const progressBar = document.querySelector(".progress-fill")
-  const statsSection = document.querySelector(".stats")
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
 
-  const animateProgressBar = () => {
-    const sectionTop = statsSection.offsetTop
-    const sectionHeight = statsSection.offsetHeight
-    const windowHeight = window.innerHeight
-    const scrollTop = window.pageYOffset
-
-    if (scrollTop > sectionTop - windowHeight + sectionHeight / 2) {
-      progressBar.style.width = "5.31%"
+  // Typing loop in the hero terminal
+  const typedEl = document.getElementById("typed")
+  if (typedEl) {
+    const cmds = ["ls projets/", "make && ./portfolio", "git push origin main", 'grep -r "passion" .']
+    if (reducedMotion) {
+      typedEl.textContent = cmds[0]
+    } else {
+      let i = 0
+      let j = 0
+      let deleting = false
+      const tick = () => {
+        const word = cmds[i]
+        typedEl.textContent = word.slice(0, j)
+        if (!deleting && j < word.length) {
+          j++
+          setTimeout(tick, 70)
+        } else if (!deleting) {
+          deleting = true
+          setTimeout(tick, 1800)
+        } else if (j > 0) {
+          j--
+          setTimeout(tick, 35)
+        } else {
+          deleting = false
+          i = (i + 1) % cmds.length
+          setTimeout(tick, 400)
+        }
+      }
+      tick()
     }
   }
 
-  window.addEventListener("scroll", animateProgressBar)
-
-  // Add intersection observer for animations
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px",
-  }
-
+  // Scroll reveal for cards and badges
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.style.opacity = "1"
-        entry.target.style.transform = "translateY(0)"
+        entry.target.classList.add("visible")
+        observer.unobserve(entry.target)
       }
     })
-  }, observerOptions)
+  }, { threshold: 0.12, rootMargin: "0px 0px -50px 0px" })
 
-  // Observe elements for animation
-  const animatedElements = document.querySelectorAll(".stat-card, .skill-badge, .achievement-card")
+  const animatedElements = document.querySelectorAll(
+    ".about-card, .experience-card, .project-card, .achievement-item, .skills-marquee"
+  )
   animatedElements.forEach((el) => {
-    el.style.opacity = "0"
-    el.style.transform = "translateY(30px)"
-    el.style.transition = "opacity 0.6s ease, transform 0.6s ease"
+    if (!reducedMotion) {
+      el.classList.add("reveal")
+    }
     observer.observe(el)
   })
 })
@@ -113,14 +126,14 @@ style.textContent = `
             top: 100%;
             left: 0;
             width: 100%;
-            background: white;
+            background: #020617;
             flex-direction: column;
             padding: 1rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
         }
-        
+
         .nav-menu.active {
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom: 1px solid #334155;
         }
         
         .social-links.active {

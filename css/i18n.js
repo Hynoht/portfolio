@@ -35,6 +35,10 @@ const translations = {
     // Experience Section
     experienceTitle: "Expérience professionnelle",
     experienceSubtitle: "Mes expériences et engagements",
+    exp5Date: "Mars 2026 - Juillet 2026 (4 mois)",
+    exp5Title: "Stagiaire - Yas Madagascar",
+    exp5Company: "Yas Madagascar",
+    exp5Desc: "Conception et déploiement d'un système d'authentification centralisée basé sur Keycloak, avec sécurisation d'une API OSGi Apache Karaf dans un cluster Kubernetes.",
     exp1Date: "Décembre 2025 - Janvier 2026",
     exp1Title: "Formateur - Grandir Dignement Madagascar",
     exp1Desc: "Animation de deux formations numériques (informatique, Internet, IA, prompting et éthique) pour une quinzaine de jeunes. Projet à impact social.",
@@ -70,11 +74,12 @@ const translations = {
     projectsTitle: "Projets réalisés",
     projectsSubtitle: "Mes projets techniques et créatifs",
     project1Title: "Transcendence",
-    project1Desc: "Projet de site immobilier : développement d'APIs sécurisées avec authentification, gestion des utilisateurs, des réservations et d'un système de crédits.",
+    project1Desc: "Plateforme web immobilière : conception et développement d'APIs REST sécurisées avec authentification et contrôle d'accès, gestion des utilisateurs, des réservations et d'un système de crédits. Défis : modélisation des données avec Prisma et conteneurisation complète avec Docker.",
     project2Title: "Webserv",
-    project2Desc: "Création d'un serveur HTTP/1.1 en C++ prenant en charge les méthodes GET, POST et DELETE.",
+    project2Desc: "Serveur web HTTP/1.1 écrit en C++ from scratch, sans bibliothèque externe : parsing du protocole, méthodes GET, POST et DELETE, clients simultanés gérés en I/O non bloquantes. Défi : rester conforme au protocole tout en garantissant stabilité et performance.",
     project3Title: "Inception",
-    project3Desc: "Virtualisation de plusieurs conteneurs Docker en créant mes propres images personnalisées, sans recourir à celles du Docker Hub.",
+    project3Desc: "Infrastructure multi-conteneurs orchestrée avec Docker Compose : chaque service tourne dans une image personnalisée écrite from scratch, sans images du Docker Hub. Défis : réseau inter-conteneurs, persistance des données et durcissement de la configuration.",
+    viewCode: "Code source sur GitHub →",
     
     // Achievements Section
     achievementsTitle: "Réalisations",
@@ -86,9 +91,10 @@ const translations = {
     homerAwardDesc: "Meilleur pitch de projet au Hackathon stupide.",
     
     // Footer
-    copyright: "© 2025 Arthinez.",
-    
+    copyright: "© 2026 Arthinez — fait à la main, sans framework. exit 0",
+
     // Aria labels
+    ariaViewCode: "Voir le code source du projet sur GitHub (s'ouvre dans un nouvel onglet)",
     ariaGithub: "Visiter mon profil GitHub",
     ariaLinkedin: "Visiter mon profil LinkedIn",
     ariaFacebook: "Visiter ma page Facebook",
@@ -133,6 +139,10 @@ const translations = {
     // Experience Section
     experienceTitle: "Professional Experience",
     experienceSubtitle: "My experiences and commitments",
+    exp5Date: "March 2026 - July 2026 (4 months)",
+    exp5Title: "Intern - Yas Madagascar",
+    exp5Company: "Yas Madagascar",
+    exp5Desc: "Design and deployment of a centralized authentication system based on Keycloak, including securing an OSGi Apache Karaf API in a Kubernetes cluster.",
     exp1Date: "December 2025 - January 2026",
     exp1Title: "Trainer - Grandir Dignement Madagascar",
     exp1Desc: "Facilitated two digital literacy training sessions (computers, Internet, AI, prompting, and ethics) for fifteen young people. Social impact project.",
@@ -168,11 +178,12 @@ const translations = {
     projectsTitle: "Completed Projects",
     projectsSubtitle: "My technical and creative projects",
     project1Title: "Transcendence",
-    project1Desc: "Real estate website project: development of secure APIs with authentication, user management, reservations, and a credit system.",
+    project1Desc: "Real estate web platform: design and development of secure REST APIs with authentication and access control, user management, reservations, and a credit system. Challenges: data modeling with Prisma and full containerization with Docker.",
     project2Title: "Webserv",
-    project2Desc: "Creation of an HTTP/1.1 server in C++ supporting GET, POST, and DELETE methods.",
+    project2Desc: "HTTP/1.1 web server written in C++ from scratch, with no external library: protocol parsing, GET, POST and DELETE methods, simultaneous clients handled with non-blocking I/O. Challenge: staying protocol-compliant while guaranteeing stability and performance.",
     project3Title: "Inception",
-    project3Desc: "Virtualization of multiple Docker containers by creating my own custom images, without using Docker Hub images.",
+    project3Desc: "Multi-container infrastructure orchestrated with Docker Compose: every service runs in a custom image written from scratch, without Docker Hub images. Challenges: inter-container networking, data persistence, and configuration hardening.",
+    viewCode: "Source code on GitHub →",
     
     // Achievements Section
     achievementsTitle: "Achievements",
@@ -184,9 +195,10 @@ const translations = {
     homerAwardDesc: "Best project pitch at the stupid Hackathon.",
     
     // Footer
-    copyright: "© 2025 Arthinez.",
-    
+    copyright: "© 2026 Arthinez — handcrafted, no framework. exit 0",
+
     // Aria labels
+    ariaViewCode: "View the project source code on GitHub (opens in a new tab)",
     ariaGithub: "Visit my GitHub profile",
     ariaLinkedin: "Visit my LinkedIn profile",
     ariaFacebook: "Visit my Facebook page",
@@ -242,23 +254,23 @@ function updateMetaTags(lang) {
   const pageTitle = document.querySelector('title');
   
   if (lang === 'fr') {
-    if (pageTitle) pageTitle.textContent = 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - Étudiant 42 Antananarivo';
-    if (metaDesc) metaDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), étudiant 42 Antananarivo passionné par la cybersécurité et la data science. Portfolio, projets et compétences techniques.');
+    if (pageTitle) pageTitle.textContent = 'Arthinez | Tolotra Anthony RANDRIAMBOLOLONA — Développeur Full Stack, Étudiant 42 Antananarivo';
+    if (metaDesc) metaDesc.setAttribute('content', 'Portfolio de Tolotra Anthony RANDRIAMBOLOLONA (Arthinez), développeur full stack et étudiant à 42 Antananarivo : projets en TypeScript, C, C++, Docker, Kubernetes, cybersécurité et data science.');
     if (metaLang) metaLang.setAttribute('content', 'French');
-    if (ogTitle) ogTitle.setAttribute('content', 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - Étudiant 42 Antananarivo');
-    if (ogDesc) ogDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), étudiant 42 Antananarivo. Découvrez mes projets en cybersécurité, data science et développement.');
+    if (ogTitle) ogTitle.setAttribute('content', 'Arthinez | Tolotra Anthony RANDRIAMBOLOLONA — Développeur Full Stack, Étudiant 42 Antananarivo');
+    if (ogDesc) ogDesc.setAttribute('content', 'Développeur full stack en formation à 42 Antananarivo. Découvrez mes projets en TypeScript, C, C++, Docker, Kubernetes, cybersécurité et data science.');
     if (ogLocale) ogLocale.setAttribute('content', 'fr_FR');
-    if (twitterTitle) twitterTitle.setAttribute('content', 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - Étudiant 42 Antananarivo');
-    if (twitterDesc) twitterDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), étudiant 42 Antananarivo passionné par la cybersécurité et la data science.');
+    if (twitterTitle) twitterTitle.setAttribute('content', 'Arthinez | Tolotra Anthony RANDRIAMBOLOLONA — Développeur Full Stack, Étudiant 42 Antananarivo');
+    if (twitterDesc) twitterDesc.setAttribute('content', 'Développeur full stack en formation à 42 Antananarivo : TypeScript, C, C++, Docker, Kubernetes, cybersécurité et data science.');
   } else {
-    if (pageTitle) pageTitle.textContent = 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - 42 Antananarivo Student';
-    if (metaDesc) metaDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez) is a 42 Antananarivo student passionate about cybersecurity and data science. Portfolio, projects, and technical skills.');
+    if (pageTitle) pageTitle.textContent = 'Arthinez | Tolotra Anthony RANDRIAMBOLOLONA — Full Stack Developer, 42 Antananarivo Student';
+    if (metaDesc) metaDesc.setAttribute('content', 'Portfolio of Tolotra Anthony RANDRIAMBOLOLONA (Arthinez), full stack developer and 42 Antananarivo student: projects in TypeScript, C, C++, Docker, Kubernetes, cybersecurity and data science.');
     if (metaLang) metaLang.setAttribute('content', 'English');
-    if (ogTitle) ogTitle.setAttribute('content', 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - 42 Antananarivo Student');
-    if (ogDesc) ogDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), 42 Antananarivo student. Discover my projects in cybersecurity, data science and development.');
+    if (ogTitle) ogTitle.setAttribute('content', 'Arthinez | Tolotra Anthony RANDRIAMBOLOLONA — Full Stack Developer, 42 Antananarivo Student');
+    if (ogDesc) ogDesc.setAttribute('content', 'Full stack developer in training at 42 Antananarivo. Discover my projects in TypeScript, C, C++, Docker, Kubernetes, cybersecurity and data science.');
     if (ogLocale) ogLocale.setAttribute('content', 'en_US');
-    if (twitterTitle) twitterTitle.setAttribute('content', 'Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - 42 Antananarivo Student');
-    if (twitterDesc) twitterDesc.setAttribute('content', 'RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), 42 Antananarivo student passionate about cybersecurity and data science.');
+    if (twitterTitle) twitterTitle.setAttribute('content', 'Arthinez | Tolotra Anthony RANDRIAMBOLOLONA — Full Stack Developer, 42 Antananarivo Student');
+    if (twitterDesc) twitterDesc.setAttribute('content', 'Full stack developer in training at 42 Antananarivo: TypeScript, C, C++, Docker, Kubernetes, cybersecurity and data science.');
   }
 }
 

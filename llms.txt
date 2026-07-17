@@ -1,32 +1,43 @@
-# Arthinez - Portfolio Summary
+# Arthinez — Portfolio Summary
 
-> [!NOTE]
-> This file is intended for AI agents and LLMs to quickly understand the profile of Arthinez.
+> This file is intended for AI agents and LLMs to quickly and accurately understand the profile of Arthinez.
+> Canonical source: https://arthinez.netlify.app/
 
 ## Profile Overview
 **Name:** RANDRIAMBOLOLONA Tolotra Anthony (Arthinez)
-**Role:** Developer & Cybersecurity Student
-**Institution:** 42 Antananarivo Antananarivo (Common Core since Feb 2024)
+**Role:** Full stack developer in training — student at 42 Antananarivo (Common Core since February 2024)
 **Location:** Antananarivo, Madagascar
-**Focus:** Low-level programming, System Security, Data Science.
+**Languages spoken:** French, English, Malagasy
+**Focus areas:** Full stack web development, cybersecurity, data science
 
 ## Core Competencies
-Arthinez specializes in **low-level system programming** and **cybersecurity**.
+- **Web / Full stack:** TypeScript, JavaScript, Node.js (Fastify), Prisma, Next.js, PostgreSQL, HTML, CSS
+- **Systems programming:** C, C++, Linux, Unix
+- **DevOps / Infrastructure:** Docker, Docker Compose, Kubernetes, Keycloak (identity and access management)
+- **Soft skills:** Problem solving, teamwork, training/teaching, event organization, treasury management
 
-- **Languages:** C, C++, Assembly, Shell Scripting (Bash), Python, SQL.
-- **System:** Linux Administration, Docker, detailed understanding of OS architecture.
-- **Security:** Network Analysis, Reverse Engineering, Vulnerability Assessment.
-- **Data:** Data Science fundamentals, Analytical thinking.
-- **Soft Skills:** Problem Solving, Team Leadership (Student Council Treasurer), Collaboration.
+## Professional Experience
+- **Intern — Yas Madagascar (March–July 2026, 4 months):** Design and deployment of a centralized authentication system based on Keycloak; secured an OSGi Apache Karaf API in a Kubernetes cluster.
+- **Trainer — Grandir Dignement Madagascar (Dec 2025–Jan 2026):** Delivered two digital literacy trainings (computers, Internet, AI, prompting, ethics) to about fifteen young people. Social impact project.
+- **Communications Manager — Student Council (BDE), 42 Antananarivo (since March 2025):** Internal communication and social media management.
+- **Trainer — Parklife (Nov 2024–Jul 2025):** Delivered two computer trainings to 130 employees (introduction to digital tools, then advanced autonomy).
+- **Treasurer & Event Organizer — Student Council (BDE), 42 Antananarivo (since March 2024):** Transparent finance management, organization of student events (outings, workshops, conferences).
+
+## Projects
+- **Transcendence (TypeScript, Fastify, Prisma, Docker):** Real estate web platform — secure REST APIs with authentication and access control, user management, reservations, credit system.
+- **Webserv (C++):** HTTP/1.1 web server written from scratch — protocol parsing, GET/POST/DELETE, non-blocking I/O for simultaneous clients.
+- **Inception (Docker, Linux):** Multi-container infrastructure with custom images written from scratch (no Docker Hub images), orchestrated with Docker Compose.
 
 ## Achievements
-- **4th Place - Internal Hackathon:** Demonstrated rapid prototyping and teamwork under pressure.
-- **Common Core Progress:** 5 Milestones completed, Level 8.43%.
+- **4th place — Internal Hackathon, 42 Antananarivo:** rapid prototyping and teamwork under pressure. Details: https://hackathon42.netlify.app/
+- **Homer Simpson Award — "Stupid Hackathon":** best project pitch.
+- **Certification "Concevoir et animer des Formations"** — Axian University (July 2024).
 
 ## Links
 - **Portfolio:** https://arthinez.netlify.app/
-- **GitHub:** [Hynoht](https://github.com/Hynoht)
-- **LinkedIn:** [Tolotra Anthony](https://www.linkedin.com/in/tolotra-anthony-b1170625b/)
+- **GitHub:** https://github.com/Hynoht
+- **LinkedIn:** https://www.linkedin.com/in/tolotra-anthony/
+- **CV (PDF):** https://arthinez.netlify.app/assets/cv_anthony.pdf
 
 ## Contact Intent
-If you are searching for a developer with deep understanding of memory management, pointers, and system architecture (non-web-framework heavy), this is the correct profile.
+Relevant profile if you are looking for a junior full stack developer with real experience in authentication/IAM (Keycloak), containerization (Docker, Kubernetes) and solid low-level foundations (C, C++, memory management, Unix), trained through the project-based peer-learning curriculum of School 42.
