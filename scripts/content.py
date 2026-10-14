@@ -18,7 +18,6 @@ PERSON = {
     "social": {
         "github": "https://github.com/Hynoht",
         "linkedin": "https://www.linkedin.com/in/tolotra-anthony/",
-        "facebook": "https://www.facebook.com/arthinez/",
     },
     "languages": {"fr": ["Français", "Anglais", "Malgache"], "en": ["French", "English", "Malagasy"]},
 }
