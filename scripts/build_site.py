@@ -392,7 +392,7 @@ def person_ld(lang):
         "image": abs_url("/assets/img/portrait-og.jpg"),
         "url": abs_url("/"),
         "email": f"mailto:{p['email']}",
-        "worksFor": {"@type": "Organization", "name": "Hango"},
+        "worksFor": {"@type": "Organization", "name": "Hango", "url": "https://hango.ch/"},
         "alumniOf": [{"@type": "EducationalOrganization", "name": "42 Antananarivo"},
                      {"@type": "EducationalOrganization", "name": "AXIAN University"}],
         "memberOf": {"@type": "Organization", "name": "Bureau des Étudiants — 42 Antananarivo"},
