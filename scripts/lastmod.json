@@ -1,0 +1,58 @@
+{
+  "/": {
+    "date": "2026-10-14",
+    "hash": "01dfd58800cebefa9639569f1a1264d86da6418f"
+  },
+  "/a-propos/": {
+    "date": "2026-10-14",
+    "hash": "573fe6864e63e0fe1859811e15e17e863b02726e"
+  },
+  "/competences/": {
+    "date": "2026-10-14",
+    "hash": "d93b5f3cf7b2488ecc8644b36714e8f03ad606c7"
+  },
+  "/contact/": {
+    "date": "2026-10-14",
+    "hash": "8f36719d2b216a3b6139d8acd87d07221ef2ad5c"
+  },
+  "/en/": {
+    "date": "2026-10-14",
+    "hash": "58dd303fa4e205347fb106638ae913340222e310"
+  },
+  "/en/about/": {
+    "date": "2026-10-14",
+    "hash": "61e33f0fa80289b6038d22b6207ca203e116818f"
+  },
+  "/en/contact/": {
+    "date": "2026-10-14",
+    "hash": "ec73b5cfb344d5384afc81fa7632270257b3252d"
+  },
+  "/en/experience/": {
+    "date": "2026-10-14",
+    "hash": "916b2eb9bf3c65ee7433cad8424a0b564a9960c3"
+  },
+  "/en/involvement/": {
+    "date": "2026-10-14",
+    "hash": "67640d7c1ca2c630bee325270e9ae6cd7aa38a68"
+  },
+  "/en/projects/": {
+    "date": "2026-10-14",
+    "hash": "26ee63a2bb5200769dddde9a3082b777f44add76"
+  },
+  "/en/skills/": {
+    "date": "2026-10-14",
+    "hash": "d46e432eb2acf93151481282a983e678079b96e2"
+  },
+  "/engagements/": {
+    "date": "2026-10-14",
+    "hash": "399af8f2ca15c60f97f71959eadb6516358913bd"
+  },
+  "/experiences/": {
+    "date": "2026-10-14",
+    "hash": "f118aed967e0ac2264edba9c9eb7d5a883077c82"
+  },
+  "/projets/": {
+    "date": "2026-10-14",
+    "hash": "fe04420332d42bbfb487abfb096cf3347c94d40d"
+  }
+}

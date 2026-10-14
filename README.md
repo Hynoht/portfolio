@@ -33,6 +33,10 @@ python3 scripts/build_site.py   # régénère les 14 pages, 404.html, sitemap.xm
 python3 -m http.server 8000     # aperçu local sur http://localhost:8000
 ```
 
+La date de modification de chaque page (`lastmod` du sitemap et `dateModified` du JSON-LD) ne
+change que si le contenu de la page change. Elle est suivie dans `scripts/lastmod.json`, qu'il
+faut commiter avec les pages.
+
 Les fichiers générés sont commités : Netlify sert le dépôt tel quel. Les URL de `styles.css`
 et de `script.js` portent un hash de leur contenu (`?v=…`), ce qui invalide le cache à chaque
 régénération.

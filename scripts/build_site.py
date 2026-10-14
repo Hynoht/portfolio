@@ -5,6 +5,7 @@ import datetime
 import hashlib
 import html
 import json
+import re
 from pathlib import Path
 
 import content as C
@@ -417,7 +418,7 @@ def json_ld(lang, page, extra=None):
          "@id": page_url + "#webpage", "url": page_url, "name": t(META[page]["title"], lang),
          "description": t(META[page]["desc"], lang), "inLanguage": lang,
          "isPartOf": {"@id": abs_url("/#website")}, "about": {"@id": abs_url("/#person")},
-         "dateModified": TODAY.isoformat(),
+         "dateModified": DATE_PLACEHOLDER,
          **({"mainEntity": {"@id": abs_url("/#person")}} if page in ("home", "about") else {})},
     ]
     if page != "home":
@@ -870,6 +871,25 @@ BUILDERS = {
 }
 
 
+DATE_PLACEHOLDER = "@@DATE_MODIFIED@@"
+LASTMOD_FILE = ROOT / "scripts" / "lastmod.json"
+LASTMOD = json.loads(LASTMOD_FILE.read_text()) if LASTMOD_FILE.exists() else {}
+
+
+def stamp(path, text):
+    normalized = re.sub(r"\?v=[0-9a-f]+", "", text)
+    digest = hashlib.sha1(normalized.encode()).hexdigest()
+    entry = LASTMOD.get(path)
+    if not entry or entry["hash"] != digest:
+        entry = {"hash": digest, "date": TODAY.isoformat()}
+        LASTMOD[path] = entry
+    return text.replace(DATE_PLACEHOLDER, entry["date"])
+
+
+def write_page(path, text):
+    write(path, stamp(path, text))
+
+
 def write(path, text):
     target = ROOT / path.lstrip("/")
     if path.endswith("/"):
@@ -890,7 +910,7 @@ def sitemap():
                 img = f"\n    <image:image><image:loc>{abs_url('/assets/img/portrait-og.jpg')}</image:loc></image:image>"
             rows.append(f'''  <url>
     <loc>{abs_url(url(page, lang))}</loc>
-    <lastmod>{TODAY.isoformat()}</lastmod>
+    <lastmod>{LASTMOD.get(url(page, lang), {}).get("date", TODAY.isoformat())}</lastmod>
     <priority>{"1.0" if page == "home" else "0.8"}</priority>{alts}{img}
   </url>''')
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -954,14 +974,14 @@ def llms_txt():
 def main():
     print(f"Building portfolio (assets v={VERSION})")
     for lang in LANGS:
-        write(url("home", lang), layout(lang, "home", home(lang)))
+        write_page(url("home", lang), layout(lang, "home", home(lang)))
         for page, build in BUILDERS.items():
             body, ld = build(lang)
-            write(url(page, lang), layout(lang, page, body, ld))
+            write_page(url(page, lang), layout(lang, page, body, ld))
     write("/404.html", not_found())
     write("/sitemap.xml", sitemap())
-    write("/sitemap_arthinez.xml", sitemap())
     write("/llms.txt", llms_txt())
+    LASTMOD_FILE.write_text(json.dumps(LASTMOD, indent=2, sort_keys=True) + "\n")
 
 
 if __name__ == "__main__":
