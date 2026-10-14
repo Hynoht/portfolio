@@ -882,7 +882,7 @@ def stamp(path, text):
     if not entry or entry["hash"] != digest:
         entry = {"hash": digest, "date": TODAY.isoformat()}
         LASTMOD[path] = entry
-    return text.replace(DATE_PLACEHOLDER, entry["date"])
+    return text.replace(DATE_PLACEHOLDER, f"{entry['date']}T00:00:00+03:00")
 
 
 def write_page(path, text):
