@@ -1,24 +1,19 @@
 #!/bin/bash
 
-# Check if script is being piped through curl
 if [ ! -p /dev/stdin ]; then
     echo "Ce script doit être exécuté via 'curl -s URL | bash'"
-    # Self-destruct
     rm -- "$0"
     exit 1
 fi
 
-# Function to get timestamp for target date (September 24, 2025 10:00)
 get_target_timestamp() {
     date -d "2025-09-24 10:00:00" +%s
 }
 
-# Function to get current timestamp
 get_current_timestamp() {
     date +%s
 }
 
-# Function to wait until target date
 wait_until_target() {
     target_ts=$(get_target_timestamp)
     while true; do
@@ -28,20 +23,17 @@ wait_until_target() {
             clone_repository
             break
         fi
-        sleep 60  # Check every minute
+        sleep 60
         echo -n "."
     done
 }
 
-# Function to clone the repository
 clone_repository() {
-    # Add your git clone command here
 	git clone git@github.com:Hynoht/blind_42.git
     echo "Repository cloné avec succès !"
     exit 0
 }
 
-# Main script
 target_ts=$(get_target_timestamp)
 current_ts=$(get_current_timestamp)
 

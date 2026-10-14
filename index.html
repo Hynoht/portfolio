@@ -1,600 +1,252 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#020617">
-
-    <!-- SEO & Meta Tags -->
-    <title>Arthinez | Tolotra Anthony RANDRIAMBOLOLONA — Développeur Full Stack, Étudiant 42 Antananarivo</title>
-    <meta name="description"
-        content="Portfolio de Tolotra Anthony RANDRIAMBOLOLONA (Arthinez), développeur full stack et étudiant à 42 Antananarivo : projets en TypeScript, C, C++, Docker, Kubernetes, cybersécurité et data science.">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="author" content="RANDRIAMBOLOLONA Tolotra Anthony (Arthinez)">
-    <meta name="keywords"
-        content="randriambololona tolotra anthony, arthinez, développeur full stack, développeur web, étudiant 42 antananarivo, cybersécurité, data science, Madagascar, école 42, C, C++, TypeScript, Docker, Kubernetes">
-
-    <!-- Hreflang for SEO (single URL, language switch is client-side) -->
-    <link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/" />
-    <link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/" />
-
-    <!-- Open Graph Tags (Social Media) -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://arthinez.netlify.app/">
-    <meta property="og:title" content="Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - Étudiant 42 Antananarivo">
-    <meta property="og:description"
-        content="RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), étudiant 42 Antananarivo passionné par le développement, la cybersécurité et la data science.">
-    <meta property="og:image" content="https://arthinez.netlify.app/image/image.jpg">
-    <meta property="og:image:width" content="3472">
-    <meta property="og:image:height" content="4624">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:alt" content="Arthinez - RANDRIAMBOLOLONA Tolotra Anthony, Étudiant 42 Antananarivo">
-    <meta property="og:site_name" content="Portfolio Arthinez - Étudiant 42 Antananarivo">
-    <meta property="og:locale" content="fr_FR">
-    <meta property="og:locale:alternate" content="en_US">
-
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Arthinez | RANDRIAMBOLOLONA Tolotra Anthony - Étudiant 42 Antananarivo">
-    <meta name="twitter:description"
-        content="RANDRIAMBOLOLONA Tolotra Anthony (Arthinez), étudiant 42 Antananarivo passionné par le développement et les nouvelles technologies.">
-    <meta name="twitter:image" content="https://arthinez.netlify.app/image/image.jpg">
-    <meta name="twitter:image:alt" content="Arthinez - RANDRIAMBOLOLONA Tolotra Anthony, Étudiant 42 Antananarivo">
-    <meta name="twitter:creator" content="@ArthynezDev">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://arthinez.netlify.app/">
-
-    <!-- Favicons & PWA -->
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
-    <link rel="icon" type="image/png" sizes="192x192" href="/image/icon-192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/image/apple-touch-icon.png">
-    <link rel="manifest" href="/manifest.webmanifest">
-
-    <!-- Preload critical resources for better performance -->
-    <link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/inter-500.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="image/image-192.webp" as="image" type="image/webp">
-
-    <!-- Stylesheets (self-hosted fonts, no render-blocking third-party requests) -->
-    <link rel="stylesheet" href="css/fonts.css?v=20260717">
-    <link rel="stylesheet" href="css/styles.css?v=20260717">
-    
-    <!-- 
-        Google Analytics removed to avoid third-party cookies
-        Alternative: Use Plausible Analytics (https://plausible.io/) or Umami (https://umami.is/)
-        or implement a cookie consent banner before loading analytics
-    -->
-    <!-- JSON-LD Structured Data: WebSite + ProfilePage + Person + Projects -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tolotra Anthony RANDRIAMBOLOLONA (Arthinez) — Développeur Full-Stack</title>
+<meta name="description" content="Portfolio de Tolotra Anthony RANDRIAMBOLOLONA (Arthinez), développeur full-stack à Antananarivo, étudiant à 42 : TypeScript, Next.js, Docker, Keycloak, C et C++.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="Tolotra Anthony RANDRIAMBOLOLONA (Arthinez)">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light">
+<link rel="canonical" href="https://arthinez.netlify.app/">
+<link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/">
+<link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/en/">
+<link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Arthinez">
+<meta property="og:url" content="https://arthinez.netlify.app/">
+<meta property="og:title" content="Tolotra Anthony RANDRIAMBOLOLONA (Arthinez) — Développeur Full-Stack">
+<meta property="og:description" content="Portfolio de Tolotra Anthony RANDRIAMBOLOLONA (Arthinez), développeur full-stack à Antananarivo, étudiant à 42 : TypeScript, Next.js, Docker, Keycloak, C et C++.">
+<meta property="og:image" content="https://arthinez.netlify.app/assets/img/portrait-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1600">
+<meta property="og:image:alt" content="Portrait de Tolotra Anthony RANDRIAMBOLOLONA">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@ArthynezDev">
+<meta name="twitter:title" content="Tolotra Anthony RANDRIAMBOLOLONA (Arthinez) — Développeur Full-Stack">
+<meta name="twitter:description" content="Portfolio de Tolotra Anthony RANDRIAMBOLOLONA (Arthinez), développeur full-stack à Antananarivo, étudiant à 42 : TypeScript, Next.js, Docker, Keycloak, C et C++.">
+<meta name="twitter:image" content="https://arthinez.netlify.app/assets/img/portrait-og.jpg">
+<link rel="icon" href="/image/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="/image/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="preload" href="/assets/fonts/jost-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/fonts.css?v=85c52012d8">
+<link rel="stylesheet" href="/css/styles.css?v=85c52012d8">
+<script src="/css/script.js?v=85c52012d8" defer></script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://arthinez.netlify.app/#website",
+   "url": "https://arthinez.netlify.app/",
+   "name": "Arthinez",
+   "inLanguage": [
+    "fr",
+    "en"
+   ],
+   "publisher": {
+    "@id": "https://arthinez.netlify.app/#person"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://arthinez.netlify.app/#person",
+   "name": "Tolotra Anthony RANDRIAMBOLOLONA",
+   "givenName": "Tolotra Anthony",
+   "familyName": "RANDRIAMBOLOLONA",
+   "alternateName": [
+    "Arthinez",
+    "Tolotra Anthony"
+   ],
+   "jobTitle": "Développeur Full-Stack",
+   "description": "Full-Stack Developer · Cloud & DevOps · 42 Antananarivo · Formateur certifié Axian University",
+   "image": "https://arthinez.netlify.app/assets/img/portrait-og.jpg",
+   "url": "https://arthinez.netlify.app/",
+   "email": "mailto:dinandrianom@gmail.com",
+   "worksFor": {
+    "@type": "Organization",
+    "name": "Hango"
+   },
+   "alumniOf": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://arthinez.netlify.app/#website",
-          "url": "https://arthinez.netlify.app/",
-          "name": "Portfolio Arthinez",
-          "description": "Portfolio de développeur full stack de Tolotra Anthony RANDRIAMBOLOLONA (Arthinez), étudiant à 42 Antananarivo.",
-          "inLanguage": ["fr", "en"],
-          "publisher": { "@id": "https://arthinez.netlify.app/#person" }
-        },
-        {
-          "@type": "ProfilePage",
-          "@id": "https://arthinez.netlify.app/#profilepage",
-          "url": "https://arthinez.netlify.app/",
-          "name": "Arthinez | Tolotra Anthony RANDRIAMBOLOLONA — Développeur Full Stack",
-          "isPartOf": { "@id": "https://arthinez.netlify.app/#website" },
-          "about": { "@id": "https://arthinez.netlify.app/#person" },
-          "mainEntity": { "@id": "https://arthinez.netlify.app/#person" },
-          "inLanguage": "fr",
-          "dateModified": "2026-07-17",
-          "primaryImageOfPage": {
-            "@type": "ImageObject",
-            "contentUrl": "https://arthinez.netlify.app/image/image.jpg",
-            "width": 3472,
-            "height": 4624
-          }
-        },
-        {
-          "@type": "Person",
-          "@id": "https://arthinez.netlify.app/#person",
-          "name": "RANDRIAMBOLOLONA Tolotra Anthony",
-          "alternateName": ["Arthinez", "Tolotra Anthony", "Anthony Randriambololona"],
-          "jobTitle": "Développeur Full Stack — Étudiant à 42 Antananarivo",
-          "affiliation": {
-            "@type": "EducationalOrganization",
-            "name": "42 Antananarivo",
-            "alternateName": ["École 42 Antananarivo", "42 School Antananarivo"],
-            "url": "https://www.42network.org/"
-          },
-          "image": "https://arthinez.netlify.app/image/image.jpg",
-          "description": "Développeur full stack en formation à 42 Antananarivo, passionné par la cybersécurité et la data science. Expérience en développement web (TypeScript, Fastify, Prisma, Next.js, PostgreSQL), programmation système (C, C++) et DevOps (Docker, Kubernetes, Keycloak). Stage de 4 mois chez Yas Madagascar : conception d'un système d'authentification centralisée basé sur Keycloak et sécurisation d'une API OSGi Apache Karaf dans un cluster Kubernetes.",
-          "url": "https://arthinez.netlify.app/",
-          "sameAs": [
-            "https://github.com/Hynoht",
-            "https://www.linkedin.com/in/tolotra-anthony/",
-            "https://www.facebook.com/arthinez/"
-          ],
-          "knowsLanguage": ["French", "English", "Malagasy"],
-          "knowsAbout": ["Développement Full Stack", "Développement Web", "Cybersécurité", "Data Science", "Linux", "C", "C++", "JavaScript", "TypeScript", "Node.js", "Fastify", "Prisma", "Next.js", "PostgreSQL", "Docker", "Kubernetes", "Keycloak", "Formation informatique"],
-          "hasOccupation": {
-            "@type": "Occupation",
-            "name": "Développeur Full Stack (étudiant)",
-            "educationRequirements": "42 Antananarivo - Tronc Commun",
-            "skills": "TypeScript, C, C++, Docker, Kubernetes, Keycloak, PostgreSQL, Linux"
-          },
-          "alumniOf": {
-            "@type": "EducationalOrganization",
-            "name": "42 Antananarivo"
-          },
-          "memberOf": {
-            "@type": "Organization",
-            "name": "Bureau des Étudiants (BDE) 42 Antananarivo",
-            "description": "Trésorier et Responsable communication"
-          },
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Antananarivo",
-            "addressCountry": "MG"
-          },
-          "award": [
-            {
-              "@type": "Award",
-              "name": "4e place - Hackathon Interne 42 Antananarivo",
-              "description": "Compétences en résolution de problèmes et travail d'équipe"
-            },
-            {
-              "@type": "Award",
-              "name": "Prix Homer Simpson - Hackathon stupide",
-              "description": "Meilleur pitch de projet"
-            }
-          ]
-        },
-        {
-          "@type": "SoftwareSourceCode",
-          "@id": "https://arthinez.netlify.app/#project-transcendence",
-          "name": "Transcendence",
-          "author": { "@id": "https://arthinez.netlify.app/#person" },
-          "programmingLanguage": "TypeScript",
-          "runtimePlatform": "Node.js (Fastify)",
-          "codeRepository": "https://github.com/Hynoht",
-          "keywords": ["TypeScript", "Fastify", "Prisma", "Docker", "API REST", "Authentification"],
-          "description": "Plateforme web immobilière : APIs REST sécurisées avec authentification et contrôle d'accès, gestion des utilisateurs, réservations et système de crédits. Stack : TypeScript, Fastify, Prisma, Docker."
-        },
-        {
-          "@type": "SoftwareSourceCode",
-          "@id": "https://arthinez.netlify.app/#project-webserv",
-          "name": "Webserv",
-          "author": { "@id": "https://arthinez.netlify.app/#person" },
-          "programmingLanguage": "C++",
-          "codeRepository": "https://github.com/Hynoht",
-          "keywords": ["C++", "HTTP/1.1", "Serveur web", "Réseau", "I/O non bloquant"],
-          "description": "Serveur HTTP/1.1 écrit en C++ from scratch : parsing du protocole, méthodes GET/POST/DELETE, I/O non bloquantes multi-clients, inspiré du comportement de NGINX."
-        },
-        {
-          "@type": "SoftwareSourceCode",
-          "@id": "https://arthinez.netlify.app/#project-inception",
-          "name": "Inception",
-          "author": { "@id": "https://arthinez.netlify.app/#person" },
-          "programmingLanguage": "Dockerfile",
-          "codeRepository": "https://github.com/Hynoht",
-          "keywords": ["Docker", "Docker Compose", "Linux", "DevOps", "Infrastructure as Code"],
-          "description": "Infrastructure multi-conteneurs Docker (NGINX, WordPress, MariaDB) construite à partir d'images personnalisées écrites from scratch, orchestrée avec Docker Compose, sans images du Docker Hub."
-        }
-      ]
+     "@type": "EducationalOrganization",
+     "name": "42 Antananarivo"
+    },
+    {
+     "@type": "EducationalOrganization",
+     "name": "AXIAN University"
     }
-    </script>
+   ],
+   "memberOf": {
+    "@type": "Organization",
+    "name": "Bureau des Étudiants — 42 Antananarivo"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Antananarivo",
+    "addressCountry": "MG"
+   },
+   "knowsLanguage": [
+    "fr",
+    "en",
+    "mg"
+   ],
+   "knowsAbout": [
+    "Algorithms",
+    "C",
+    "C++",
+    "CSS",
+    "Docker",
+    "Docker Compose",
+    "Fastify",
+    "HTML",
+    "HTTP / sockets",
+    "JavaScript",
+    "Keycloak",
+    "Linux / Unix",
+    "NGINX",
+    "Next.js",
+    "Node.js",
+    "PostgreSQL",
+    "Prisma ORM",
+    "TypeScript"
+   ],
+   "award": [
+    "4th place — 42 Antananarivo internal hackathon",
+    "Homer Simpson Award — Stupid Hackathon (best pitch)"
+   ],
+   "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Certification « Concevoir et animer des formations »",
+    "recognizedBy": {
+     "@type": "Organization",
+     "name": "AXIAN University"
+    }
+   },
+   "sameAs": [
+    "https://github.com/Hynoht",
+    "https://www.linkedin.com/in/tolotra-anthony/",
+    "https://www.facebook.com/arthinez/"
+   ]
+  },
+  {
+   "@type": "ProfilePage",
+   "@id": "https://arthinez.netlify.app/#webpage",
+   "url": "https://arthinez.netlify.app/",
+   "name": "Tolotra Anthony RANDRIAMBOLOLONA (Arthinez) — Développeur Full-Stack",
+   "description": "Portfolio de Tolotra Anthony RANDRIAMBOLOLONA (Arthinez), développeur full-stack à Antananarivo, étudiant à 42 : TypeScript, Next.js, Docker, Keycloak, C et C++.",
+   "inLanguage": "fr",
+   "isPartOf": {
+    "@id": "https://arthinez.netlify.app/#website"
+   },
+   "about": {
+    "@id": "https://arthinez.netlify.app/#person"
+   },
+   "dateModified": "2026-10-14",
+   "mainEntity": {
+    "@id": "https://arthinez.netlify.app/#person"
+   }
+  }
+ ]
+}
+</script>
+<noscript><style>@media (max-width:1080px){.nav{display:flex!important;position:static;box-shadow:none}.nav-toggle{display:none!important}.site-header__inner{flex-wrap:wrap}}.reveal{opacity:1;transform:none}</style></noscript>
 </head>
-
-<body>
-    <!-- Load SVG icons sprite -->
-    <div style="display: none;">
-        <svg xmlns="http://www.w3.org/2000/svg">
-            <!-- GitHub -->
-            <symbol id="icon-github" viewBox="0 0 496 512">
-                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-            </symbol>
-            <!-- LinkedIn -->
-            <symbol id="icon-linkedin" viewBox="0 0 448 512">
-                <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
-            </symbol>
-            <!-- Facebook -->
-            <symbol id="icon-facebook" viewBox="0 0 512 512">
-                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
-            </symbol>
-            <!-- Code -->
-            <symbol id="icon-code" viewBox="0 0 640 512">
-                <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/>
-            </symbol>
-            <!-- Download -->
-            <symbol id="icon-download" viewBox="0 0 512 512">
-                <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/>
-            </symbol>
-            <!-- User -->
-            <symbol id="icon-user" viewBox="0 0 448 512">
-                <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
-            </symbol>
-            <!-- Chart Bar -->
-            <symbol id="icon-chart-bar" viewBox="0 0 512 512">
-                <path d="M32 32c17.7 0 32 14.3 32 32V400c0 8.8 7.2 16 16 16H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H80c-44.2 0-80-35.8-80-80V64C0 46.3 14.3 32 32 32zm96 96c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H160c-17.7 0-32-14.3-32-32V128zM320 192h64c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H320c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z"/>
-            </symbol>
-            <!-- Trophy -->
-            <symbol id="icon-trophy" viewBox="0 0 576 512">
-                <path d="M400 0H176c-26.5 0-48.1 21.8-47.1 48.2c.2 5.3 .4 10.6 .7 15.8H24C10.7 64 0 74.7 0 88c0 92.6 33.5 157 78.5 200.7c44.3 43.1 98.3 64.8 138.1 75.8c23.4 6.5 39.4 26 39.4 45.6c0 20.9-17 37.9-37.9 37.9H192c-17.7 0-32 14.3-32 32s14.3 32 32 32H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H358.9c-20.9 0-37.9-17-37.9-37.9c0-19.6 15.9-39.2 39.4-45.6c39.9-11 93.9-32.7 138.2-75.8C542.5 245 576 180.6 576 88c0-13.3-10.7-24-24-24H446.4c.3-5.2 .5-10.4 .7-15.8C448.1 21.8 426.5 0 400 0zM48.9 112h84.4c9.1 90.1 29.2 150.3 51.9 190.6c-24.9-11-50.8-26.5-73.2-48.3c-32-31.1-58-76-63-142.3zM464.1 254.3c-22.4 21.8-48.3 37.3-73.2 48.3c22.7-40.3 42.8-100.5 51.9-190.6h84.4c-5.1 66.3-31.1 111.2-63 142.3z"/>
-            </symbol>
-            <!-- External Link -->
-            <symbol id="icon-external-link" viewBox="0 0 512 512">
-                <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/>
-            </symbol>
-            <!-- Briefcase -->
-            <symbol id="icon-briefcase" viewBox="0 0 512 512">
-                <path d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/>
-            </symbol>
-        </svg>
-    </div>
-
-    <!-- Skip to main content link for accessibility -->
-    <a href="#main-content" class="skip-link" data-i18n="skip">Aller au contenu principal</a>
-
-    <!-- Navigation -->
-    <nav class="navbar" aria-label="Navigation principale">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="accent">~/</span><span>arthinez</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link" data-i18n="about">À propos</a></li>
-                <li><a href="#experience" class="nav-link" data-i18n="experience">Expérience</a></li>
-                <li><a href="#skills" class="nav-link" data-i18n="skills">Compétences</a></li>
-                <li><a href="#projects" class="nav-link" data-i18n="projects">Projets</a></li>
-            </ul>
-            <div class="lang-switcher">
-                <button class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
-                <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
-            </div>
-            <div class="social-links" role="navigation" aria-label="Social media links" data-i18n-aria="ariaSocialNav">
-                <a href="https://github.com/Hynoht" target="_blank" rel="noopener noreferrer" aria-label="Visiter mon profil GitHub" data-i18n-aria="ariaGithub">
-                    <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
-                </a>
-                <a href="https://www.linkedin.com/in/tolotra-anthony/" target="_blank"
-                    rel="noopener noreferrer" aria-label="Visiter mon profil LinkedIn" data-i18n-aria="ariaLinkedin">
-                    <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg>
-                </a>
-                <a href="https://www.facebook.com/arthinez/" target="_blank" rel="noopener noreferrer" aria-label="Visiter ma page Facebook" data-i18n-aria="ariaFacebook">
-                    <svg class="icon" aria-hidden="true"><use href="#icon-facebook"></use></svg>
-                </a>
-            </div>
-            <button class="hamburger" aria-label="Basculer le menu de navigation" data-i18n-aria="ariaToggleMenu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+<body class="page-home">
+<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false"><symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol><symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol><symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol><symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol><symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></symbol><symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/></symbol><symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol><symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></symbol><symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol><symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></symbol><symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 0 1-.6-9.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9H7z"/></symbol><symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M10 10h4v4h-4zM9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol><symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol><symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v5a4 4 0 0 1-8 0V4zM8 6H4v1a4 4 0 0 0 4 4M16 6h4v1a4 4 0 0 1-4 4M12 13v4M8 21h8M9 17h6"/></symbol><symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol><symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></symbol><symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9z"/><path d="M6 11v5c3 2 9 2 12 0v-5M22 9v6"/></symbol><symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></symbol><symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></symbol><symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></symbol><symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></symbol><symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></symbol><symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol><symbol id="i-facebook" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.02 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.88v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.09 24 18.09 24 12.07z"/></symbol></svg>
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/" aria-label="Arthinez — Accueil">
+      <span class="brand__mark" aria-hidden="true"></span><span class="brand__name">Arthi<span>nez</span></span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Navigation principale">
+      <ul class="nav__list"><li><a class="nav__link" href="/" aria-current="page">Accueil</a></li><li><a class="nav__link" href="/experiences/">Expériences</a></li><li><a class="nav__link" href="/engagements/">Engagements</a></li><li><a class="nav__link" href="/projets/">Projets</a></li><li><a class="nav__link" href="/competences/">Compétences</a></li><li><a class="nav__link" href="/a-propos/">À propos</a></li><li><a class="nav__link" href="/contact/">Contact</a></li></ul>
+      <div class="nav__actions">
+        <a class="lang-switch" href="/en/" hreflang="en" lang="en" aria-label="Read this page in English">EN</a>
+        <a class="btn btn--outline btn--sm" href="/assets/cv_anthony.pdf" download aria-label="Télécharger mon CV au format PDF"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-download"></use></svg>Télécharger le CV</a>
+      </div>
     </nav>
-
-    <!-- Hero Section -->
-    <main id="main-content">
-    <section class="hero" aria-label="Introduction">
-        <div class="container">
-            <div class="hero-content">
-                <div class="terminal">
-                    <div class="terminal-bar" aria-hidden="true">
-                        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                        <span class="terminal-title">arthinez@42 — zsh</span>
-                    </div>
-                    <div class="terminal-body">
-                        <p class="line" aria-hidden="true"><span class="prompt">➜ ~</span> <span class="cmd">whoami</span></p>
-                        <div class="line output identity">
-                            <div class="profile-image">
-                                <picture>
-                                    <source srcset="/image/image-192.webp" type="image/webp">
-                                    <img src="/image/image-192.jpg" alt="Portrait de Tolotra Anthony RANDRIAMBOLOLONA (Arthinez), développeur full stack et étudiant à 42 Antananarivo" class="profile-img" width="192" height="256" loading="eager" fetchpriority="high">
-                                </picture>
-                            </div>
-                            <div>
-                                <h1 class="hero-title"><span class="accent">Tolotra Anthony</span> RANDRIAMBOLOLONA</h1>
-                                <p class="hero-subtitle"><span data-i18n="studentAt">Étudiant à</span> <strong>42 Antananarivo</strong></p>
-                            </div>
-                        </div>
-                        <p class="line" aria-hidden="true"><span class="prompt">➜ ~</span> <span class="cmd">cat mission.txt</span></p>
-                        <p class="line output hero-description" data-i18n="heroDesc">
-                            Je suis motivé par la curiosité, l'apprentissage continu et l'ambition de contribuer de manière significative au monde numérique de demain.
-                        </p>
-                        <p class="line" aria-hidden="true"><span class="prompt">➜ ~</span> <span class="cmd" id="typed"></span><span class="cursor"></span></p>
-                    </div>
-                </div>
-                <div class="hero-buttons">
-                    <a href="https://github.com/Hynoht" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-primary" aria-label="Visiter mon profil GitHub" data-i18n-aria="ariaGithub">
-                        <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
-                        <span data-i18n="github">GitHub</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/tolotra-anthony/" target="_blank"
-                        rel="noopener noreferrer" class="btn btn-outline" aria-label="Visiter mon profil LinkedIn" data-i18n-aria="ariaLinkedin">
-                        <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg>
-                        <span data-i18n="linkedin">LinkedIn</span>
-                    </a>
-                    <a href="assets/cv_anthony.pdf" download class="btn btn-outline" aria-label="Télécharger mon CV au format PDF" data-i18n-aria="ariaDownloadCV">
-                        <svg class="icon" aria-hidden="true"><use href="#icon-download"></use></svg>
-                        <span data-i18n="downloadCV">Télécharger CV</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about" class="about" aria-labelledby="about-title">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" id="about-title">
-                    <span data-i18n="aboutTitle">À propos de moi</span>
-                </h2>
-                <p class="section-subtitle" data-i18n="aboutSubtitle">Apprenez-en davantage sur mon parcours et mes centres d'intérêt</p>
-            </div>
-
-            <div class="about-card">
-                <div class="card-header">
-                    <h3 class="card-title" data-i18n="journeyTitle">Mon parcours à la 42 Antananarivo</h3>
-                    <p class="card-subtitle" data-i18n="journeySubtitle">Actuellement dans le Tronc Commun depuis février 2024</p>
-                </div>
-                <div class="card-content">
-                    <div class="about-grid">
-                        <div class="about-section">
-                            <h4 data-i18n="focusAreas">Domaines d'intérêt</h4>
-                            <div class="focus-item">
-                                <div class="bullet"></div>
-                                <p><strong data-i18n="cybersecurity">Cybersécurité</strong>: <span data-i18n="cybersecurityDesc">Passionné par la protection des systèmes et des informations</span>
-                                </p>
-                            </div>
-                            <div class="focus-item">
-                                <div class="bullet"></div>
-                                <p><strong data-i18n="dataScience">Data Science</strong>: <span data-i18n="dataScienceDesc">Intérêt croissant pour la combinaison de compétences techniques et de pensée analytique pour extraire des informations à partir des données</span></p>
-                            </div>
-                        </div>
-                        <div class="about-section">
-                            <h4 data-i18n="formation">Formation</h4>
-                            <div class="focus-item">
-                                <div class="bullet"></div>
-                                <p><strong>École 42 Antananarivo</strong>: <span data-i18n="formation42">Tronc Commun depuis février 2024</span></p>
-                            </div>
-                            <div class="focus-item">
-                                <div class="bullet"></div>
-                                <p><strong>Axian University</strong>: <span data-i18n="formationAxian">Certification "Concevoir et animer des Formations" (Juillet 2024)</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience" aria-labelledby="experience-title">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" id="experience-title">
-                    <span data-i18n="experienceTitle">Expérience professionnelle</span>
-                </h2>
-                <p class="section-subtitle" data-i18n="experienceSubtitle">Mes expériences et engagements</p>
-            </div>
-
-            <div class="timeline">
-                <!-- Stage Yas Madagascar -->
-                <div class="experience-card">
-                    <div class="experience-date" data-i18n="exp5Date">Mars 2026 - Juillet 2026 (4 mois)</div>
-                    <div class="experience-content">
-                        <h3 class="experience-title" data-i18n="exp5Title">Stagiaire - Yas Madagascar</h3>
-                        <p class="experience-company" data-i18n="exp5Company">Yas Madagascar</p>
-                        <p class="experience-description" data-i18n="exp5Desc">
-                            Conception et déploiement d'un système d'authentification centralisée basé sur Keycloak, avec sécurisation d'une API OSGi Apache Karaf dans un cluster Kubernetes.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Formateur Grandir Dignement -->
-                <div class="experience-card">
-                    <div class="experience-date" data-i18n="exp1Date">Décembre 2025 - Janvier 2026</div>
-                    <div class="experience-content">
-                        <h3 class="experience-title" data-i18n="exp1Title">Formateur - Grandir Dignement Madagascar</h3>
-                        <p class="experience-company">42 Antananarivo</p>
-                        <p class="experience-description" data-i18n="exp1Desc">
-                            Animation de deux formations numériques (informatique, Internet, IA, prompting et éthique) pour une quinzaine de jeunes. Projet à impact social.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Responsable Communication BDE -->
-                <div class="experience-card">
-                    <div class="experience-date" data-i18n="exp2Date">Mars 2025 - Présent</div>
-                    <div class="experience-content">
-                        <h3 class="experience-title" data-i18n="exp2Title">Responsable communication</h3>
-                        <p class="experience-company" data-i18n="exp2Company">Bureau des étudiants (BDE) - 42 Antananarivo</p>
-                        <p class="experience-description" data-i18n="exp2Desc">
-                            Communication interne entre le BDE et les étudiants, ainsi que gestion des réseaux sociaux du BDE.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Formateur Parklife -->
-                <div class="experience-card">
-                    <div class="experience-date" data-i18n="exp3Date">Novembre 2024 - Juillet 2025</div>
-                    <div class="experience-content">
-                        <h3 class="experience-title" data-i18n="exp3Title">Formateur - Parklife</h3>
-                        <p class="experience-company">42 Antananarivo</p>
-                        <p class="experience-description" data-i18n="exp3Desc">
-                            Animation de deux formations informatiques pour 130 collaborateurs de Parklife : initiation aux outils numériques puis approfondissement pour renforcer leur autonomie.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Trésorier BDE -->
-                <div class="experience-card">
-                    <div class="experience-date" data-i18n="exp4Date">Mars 2024 - Présent</div>
-                    <div class="experience-content">
-                        <h3 class="experience-title" data-i18n="exp4Title">Trésorier et Organisateur d'événements</h3>
-                        <p class="experience-company" data-i18n="exp4Company">Bureau des étudiants (BDE) - 42 Antananarivo</p>
-                        <p class="experience-description" data-i18n="exp4Desc">
-                            Gestion des finances du BDE avec transparence pour réaliser des projets et offrir aux étudiants des événements et services de qualité (sorties, ateliers, conférences).
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills" aria-labelledby="skills-title">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" id="skills-title">
-                    <span data-i18n="skillsTitle">Compétences</span>
-                </h2>
-                <p class="section-subtitle" data-i18n="skillsSubtitle">Technologies et outils que j'utilise</p>
-            </div>
-
-            <div class="skills-marquee">
-                <div class="skills-track">
-                    <div class="skill-badge">Linux</div>
-                    <div class="skill-badge">C</div>
-                    <div class="skill-badge">C++</div>
-                    <div class="skill-badge">Docker</div>
-                    <div class="skill-badge">Typescript</div>
-                    <div class="skill-badge">Fastify</div>
-                    <div class="skill-badge">Prisma</div>
-                    <div class="skill-badge">NextJs</div>
-                    <div class="skill-badge">PostgreSQL</div>
-                    <div class="skill-badge">Keycloak</div>
-                    <div class="skill-badge">Kubernetes</div>
-                    <!-- Duplicated set for the seamless infinite loop (hidden from screen readers) -->
-                    <div class="skill-badge" aria-hidden="true">Linux</div>
-                    <div class="skill-badge" aria-hidden="true">C</div>
-                    <div class="skill-badge" aria-hidden="true">C++</div>
-                    <div class="skill-badge" aria-hidden="true">Docker</div>
-                    <div class="skill-badge" aria-hidden="true">Typescript</div>
-                    <div class="skill-badge" aria-hidden="true">Fastify</div>
-                    <div class="skill-badge" aria-hidden="true">Prisma</div>
-                    <div class="skill-badge" aria-hidden="true">NextJs</div>
-                    <div class="skill-badge" aria-hidden="true">PostgreSQL</div>
-                    <div class="skill-badge" aria-hidden="true">Keycloak</div>
-                    <div class="skill-badge" aria-hidden="true">Kubernetes</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects" aria-labelledby="projects-title">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" id="projects-title">
-                    <span data-i18n="projectsTitle">Projets réalisés</span>
-                </h2>
-                <p class="section-subtitle" data-i18n="projectsSubtitle">Mes projets techniques et créatifs</p>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Transcendence -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title" data-i18n="project1Title">Transcendence</h3>
-                        <div class="project-tags">
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Fastify</span>
-                            <span class="tag">Prisma</span>
-                            <span class="tag">Docker</span>
-                        </div>
-                    </div>
-                    <p class="project-description" data-i18n="project1Desc">
-                        Plateforme web immobilière : conception et développement d'APIs REST sécurisées avec authentification et contrôle d'accès, gestion des utilisateurs, des réservations et d'un système de crédits. Défis : modélisation des données avec Prisma et conteneurisation complète avec Docker.
-                    </p>
-                    <a href="https://github.com/Hynoht" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="viewCode" aria-label="Voir le code source de Transcendence sur GitHub" data-i18n-aria="ariaViewCode">Code source sur GitHub →</a>
-                </article>
-
-                <!-- Webserv -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title" data-i18n="project2Title">Webserv</h3>
-                        <div class="project-tags">
-                            <span class="tag">C++</span>
-                            <span class="tag">HTTP/1.1</span>
-                            <span class="tag">Server</span>
-                        </div>
-                    </div>
-                    <p class="project-description" data-i18n="project2Desc">
-                        Serveur web HTTP/1.1 écrit en C++ from scratch, sans bibliothèque externe : parsing du protocole, méthodes GET, POST et DELETE, clients simultanés gérés en I/O non bloquantes. Défi : rester conforme au protocole tout en garantissant stabilité et performance.
-                    </p>
-                    <a href="https://github.com/Hynoht" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="viewCode" aria-label="Voir le code source de Webserv sur GitHub" data-i18n-aria="ariaViewCode">Code source sur GitHub →</a>
-                </article>
-
-                <!-- Inception -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title" data-i18n="project3Title">Inception</h3>
-                        <div class="project-tags">
-                            <span class="tag">Docker</span>
-                            <span class="tag">Linux</span>
-                            <span class="tag">DevOps</span>
-                        </div>
-                    </div>
-                    <p class="project-description" data-i18n="project3Desc">
-                        Infrastructure multi-conteneurs orchestrée avec Docker Compose : chaque service tourne dans une image personnalisée écrite from scratch, sans images du Docker Hub. Défis : réseau inter-conteneurs, persistance des données et durcissement de la configuration.
-                    </p>
-                    <a href="https://github.com/Hynoht" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="viewCode" aria-label="Voir le code source d'Inception sur GitHub" data-i18n-aria="ariaViewCode">Code source sur GitHub →</a>
-                </article>
-            </div>
-
-            <!-- Achievements subsection -->
-            <div class="achievements-subsection">
-                <h3 class="subsection-title" data-i18n="achievementsTitle">Réalisations notables</h3>
-                <div class="achievements-list">
-                    <div class="achievement-item">
-                        <svg class="icon trophy-icon" aria-hidden="true"><use href="#icon-trophy"></use></svg>
-                        <div>
-                            <strong data-i18n="hackathon4th">4ème place - Hackathon Interne</strong>
-                            <p data-i18n="hackathon4thDesc">Démonstration de compétences en résolution de problèmes et travail d'équipe dans un environnement compétitif</p>
-                            <a href="https://hackathon42.netlify.app/" target="_blank" rel="noopener noreferrer" class="achievement-link" data-i18n="viewDetails">Voir les détails →</a>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <svg class="icon trophy-icon" aria-hidden="true"><use href="#icon-trophy"></use></svg>
-                        <div>
-                            <strong data-i18n="homerAward">PRIX HOMER SIMPSON</strong>
-                            <p data-i18n="homerAwardDesc">Meilleur pitch de projet au Hackathon stupide.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <p data-i18n="copyright">© 2026 Arthinez — fait à la main, sans framework. exit 0</p>
-                <div class="footer-social" role="navigation" aria-label="Liens réseaux sociaux du pied de page" data-i18n-aria="ariaFooterSocial">
-                    <a href="https://github.com/Hynoht" target="_blank" rel="noopener noreferrer" aria-label="Visiter mon profil GitHub" data-i18n-aria="ariaGithub">
-                        <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/tolotra-anthony/" target="_blank"
-                        rel="noopener noreferrer" aria-label="Visiter mon profil LinkedIn" data-i18n-aria="ariaLinkedin">
-                        <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg>
-                    </a>
-                    <a href="https://www.facebook.com/arthinez/" target="_blank" rel="noopener noreferrer" aria-label="Visiter ma page Facebook" data-i18n-aria="ariaFacebook">
-                        <svg class="icon" aria-hidden="true"><use href="#icon-facebook"></use></svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="css/i18n.js?v=20260717"></script>
-    <script src="css/script.js?v=20260717"></script>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-label-open="Menu" data-label-close="Fermer le menu">
+      <svg class="icon nav-toggle__open" aria-hidden="true" focusable="false"><use href="#i-menu"></use></svg><svg class="icon nav-toggle__close" aria-hidden="true" focusable="false"><use href="#i-close"></use></svg><span class="visually-hidden">Menu</span>
+    </button>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__text">
+      <p class="hero__hello">Bonjour, je suis</p>
+      <h1 class="hero__name">Tolotra Anthony <span class="hero__alias">alias Arthinez</span></h1>
+      <p class="hero__role"><span class="hl-green">Développeur Full-Stack</span> basé à <span class="hl-purple">Antananarivo</span></p>
+      <p class="hero__lead">Développeur junior chez Hango et étudiant à 42 Antananarivo. Je construis des applications web en TypeScript et je m’intéresse de près au cloud, au DevOps et à la sécurité.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="/projets/">Voir mes projets<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a>
+        <a class="btn btn--ghost" href="/contact/">Me contacter</a>
+      </div>
+      <ul class="social social--hero"><li><a href="https://github.com/Hynoht" target="_blank" rel="noopener noreferrer me" aria-label="GitHub (nouvel onglet)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-github"></use></svg></a></li><li><a href="https://www.linkedin.com/in/tolotra-anthony/" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn (nouvel onglet)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-linkedin"></use></svg></a></li><li><a href="https://www.facebook.com/arthinez/" target="_blank" rel="noopener noreferrer me" aria-label="Facebook (nouvel onglet)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-facebook"></use></svg></a></li></ul>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__blob" aria-hidden="true"></div>
+      <div class="hero__portrait"><img class="hero__img" src="/assets/img/portrait-720.webp" srcset="/assets/img/portrait-360.webp 360w, /assets/img/portrait-720.webp 720w" sizes="(min-width: 960px) 360px, 70vw" width="720" height="960" alt="Portrait de Tolotra Anthony RANDRIAMBOLOLONA, souriant, en t-shirt noir" fetchpriority="high" loading="eager" decoding="async"></div>
+      <span class="float-logo float-logo--1"><img src="/assets/img/logo-c.webp" width="56" height="56" alt="C"></span><span class="float-logo float-logo--2"><img src="/assets/img/logo-cpp.webp" width="56" height="56" alt="C++"></span><span class="float-logo float-logo--3"><img src="/assets/img/logo-docker.webp" width="56" height="56" alt="Docker"></span><span class="float-logo float-logo--4"><img src="/assets/img/logo-linux.webp" width="56" height="56" alt="Linux"></span>
+      <p class="hero__status"><span class="dot" aria-hidden="true"></span>En poste · <strong>Développeur junior</strong> @ Hango</p>
+    </div>
+  </div>
+</section><section class="section" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-head section-head--center"><p class="eyebrow">Spécialités</p><h2 class="section-title" id="services-title">Ce que je fais</h2></div>
+    <ul class="services"><li class="service reveal-item"><span class="service__icon service__icon--c1"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"></use></svg></span><h3 class="service__title">Développement full-stack</h3><p>APIs REST sécurisées et interfaces web avec TypeScript, Fastify, Next.js, Prisma et PostgreSQL.</p></li><li class="service reveal-item"><span class="service__icon service__icon--c2"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-cloud"></use></svg></span><h3 class="service__title">Cloud, DevOps &amp; IAM</h3><p>Conteneurisation avec Docker, authentification centralisée avec Keycloak et premiers pas en orchestration Kubernetes.</p></li><li class="service reveal-item"><span class="service__icon service__icon--c3"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-cpu"></use></svg></span><h3 class="service__title">Bases systèmes solides</h3><p>C, C++, Linux et algorithmique, acquis par la pédagogie par projets de 42.</p></li></ul>
+    <p class="center"><a class="link-arrow" href="/competences/">Toutes mes compétences<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a></p>
+  </div>
+</section><section class="section section--tint" aria-labelledby="journey-title">
+  <div class="container split">
+    <div class="split__media reveal-item">
+      <span class="scribble" aria-hidden="true"></span>
+      <div class="split__photo"><img class="split__img" src="/assets/img/about-42-1100.webp" srcset="/assets/img/about-42-640.webp 640w, /assets/img/about-42-1100.webp 1100w" sizes="(min-width: 960px) 480px, 100vw" width="1100" height="825" alt="Tolotra Anthony avec le badge de 42 Antananarivo lors d&#x27;un événement à l&#x27;école" loading="lazy" decoding="async" style="object-position:28% 40%"></div>
+      <p class="stat stat--a"><strong class="stat__num hl-green">2</strong><span>ans à 42<br>Antananarivo</span></p>
+      <p class="stat stat--b"><strong class="stat__num hl-purple">130</strong><span>collaborateurs<br>formés</span></p>
+    </div>
+    <div class="split__text">
+      <div class="section-head"><p class="eyebrow">Mon parcours</p><h2 class="section-title" id="journey-title">Du code bas niveau aux applications web</h2></div>
+      <p>Entré à 42 Antananarivo en février 2024, j’ai appris à résoudre des problèmes complexes par la pratique et le travail en équipe : C, C++, Linux, puis développement web et infrastructure. En 2026, j’ai développé l’interface web de la plateforme d’événements Hango, effectué un stage d’intégration chez Yas Madagascar autour de Keycloak, puis rejoint Hango comme développeur junior.</p>
+      <p>En parallèle, je m’engage au BDE de mon école et j’anime des formations au numérique.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="/experiences/">Mes expériences<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a>
+        <a class="btn btn--ghost" href="/a-propos/">En savoir plus</a>
+      </div>
+    </div>
+  </div>
+</section><section class="section" aria-labelledby="explore-title">
+  <div class="container">
+    <div class="section-head section-head--center"><p class="eyebrow">Portfolio</p><h2 class="section-title" id="explore-title">Explorer mon parcours</h2><p class="section-head__intro">Chaque facette de mon profil a sa propre page.</p></div>
+    <ul class="quick-grid"><li><a class="quick reveal-item" href="/experiences/"><span class="quick__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-briefcase"></use></svg></span><span class="quick__title">Expériences</span><span class="quick__text">Hango, Yas Madagascar et le cursus 42.</span><svg class="icon quick__arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a></li><li><a class="quick reveal-item" href="/engagements/"><span class="quick__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-users"></use></svg></span><span class="quick__title">Engagements</span><span class="quick__text">BDE, événements et formations animées.</span><svg class="icon quick__arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a></li><li><a class="quick reveal-item" href="/projets/"><span class="quick__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"></use></svg></span><span class="quick__title">Projets</span><span class="quick__text">7 projets : Keycloak, Webserv, Inception, hackathons…</span><svg class="icon quick__arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a></li><li><a class="quick reveal-item" href="/competences/"><span class="quick__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-cpu"></use></svg></span><span class="quick__title">Compétences</span><span class="quick__text">Web, cloud &amp; DevOps, systèmes et soft skills.</span><svg class="icon quick__arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a></li></ul>
+  </div>
+</section><section class="cta-band"><div class="container cta-band__inner"><div><h2 class="cta-band__title">Un projet, un stage ou une collaboration ?</h2><p>Je suis joignable par e-mail ou sur LinkedIn.</p></div><a class="btn btn--primary" href="/contact/">Me contacter<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div>
+      <a class="brand" href="/"><span class="brand__mark" aria-hidden="true"></span><span class="brand__name">Arthi<span>nez</span></span></a>
+      <p class="site-footer__tag">Développeur full-stack à Antananarivo. Site fait à la main, sans framework.</p>
+      <ul class="social"><li><a href="https://github.com/Hynoht" target="_blank" rel="noopener noreferrer me" aria-label="GitHub (nouvel onglet)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-github"></use></svg></a></li><li><a href="https://www.linkedin.com/in/tolotra-anthony/" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn (nouvel onglet)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-linkedin"></use></svg></a></li><li><a href="https://www.facebook.com/arthinez/" target="_blank" rel="noopener noreferrer me" aria-label="Facebook (nouvel onglet)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-facebook"></use></svg></a></li></ul>
+    </div>
+    <nav aria-label="Pages"><p class="site-footer__h">Pages</p><ul class="site-footer__links"><li><a href="/">Accueil</a></li><li><a href="/experiences/">Expériences</a></li><li><a href="/engagements/">Engagements</a></li><li><a href="/projets/">Projets</a></li><li><a href="/competences/">Compétences</a></li><li><a href="/a-propos/">À propos</a></li><li><a href="/contact/">Contact</a></li></ul></nav>
+    <div><p class="site-footer__h">Contact</p>
+      <ul class="site-footer__links">
+        <li><a href="mailto:dinandrianom@gmail.com">dinandrianom@gmail.com</a></li>
+        <li>Antananarivo, Madagascar</li>
+        <li><a href="/assets/cv_anthony.pdf" download>Télécharger le CV</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container site-footer__bottom"><p>© 2026 Tolotra Anthony RANDRIAMBOLOLONA — Arthinez</p></div>
+</footer>
 </body>
-
 </html>

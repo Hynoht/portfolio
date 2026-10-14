@@ -1,11 +1,7 @@
-# Netlify configuration
-# HTTP headers live in the _headers file (single source of truth).
-
 [build]
   publish = "."
   command = "npm run build || echo 'No build step required'"
 
-# Redirect rules
 [[redirects]]
   from = "/index.html"
   to = "/"

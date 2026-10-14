@@ -1,12 +1,7 @@
-# Robots.txt for Arthinez Portfolio
-# https://arthinez.netlify.app
-
-# All bots welcome
 User-agent: *
 Allow: /
 Disallow: /blind42.sh
 
-# AI / LLM crawlers explicitly welcome (GEO)
 User-agent: GPTBot
 Allow: /
 
@@ -31,8 +26,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-# Sitemap
 Sitemap: https://arthinez.netlify.app/sitemap.xml
-
-# LLM-friendly summary
-# See also: https://arthinez.netlify.app/llms.txt

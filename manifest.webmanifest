@@ -1,12 +1,12 @@
 {
   "name": "Arthinez — Portfolio de Tolotra Anthony RANDRIAMBOLOLONA",
   "short_name": "Arthinez",
-  "description": "Portfolio de développeur full stack — étudiant à 42 Antananarivo.",
+  "description": "Portfolio de développeur full-stack — Antananarivo.",
   "start_url": "/",
   "scope": "/",
   "display": "minimal-ui",
-  "background_color": "#020617",
-  "theme_color": "#020617",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
   "lang": "fr",
   "icons": [
     {

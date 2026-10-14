@@ -1,43 +1,60 @@
-# Arthinez — Portfolio Summary
+# Arthinez — Tolotra Anthony RANDRIAMBOLOLONA
 
-> This file is intended for AI agents and LLMs to quickly and accurately understand the profile of Arthinez.
-> Canonical source: https://arthinez.netlify.app/
+> Portfolio of a full-stack developer based in Antananarivo, Madagascar. This file summarizes the site for AI agents and LLMs.
+> Canonical source: https://arthinez.netlify.app/ (French) — English version: https://arthinez.netlify.app/en/
 
-## Profile Overview
-**Name:** RANDRIAMBOLOLONA Tolotra Anthony (Arthinez)
-**Role:** Full stack developer in training — student at 42 Antananarivo (Common Core since February 2024)
-**Location:** Antananarivo, Madagascar
-**Languages spoken:** French, English, Malagasy
-**Focus areas:** Full stack web development, cybersecurity, data science
+## Profile
+- Name: Tolotra Anthony RANDRIAMBOLOLONA (alias Arthinez)
+- Headline: Full-Stack Developer · Cloud & DevOps · 42 Antananarivo · Certified Trainer at Axian University
+- Location: Antananarivo, Madagascar
+- Languages: French, English, Malagasy
 
-## Core Competencies
-- **Web / Full stack:** TypeScript, JavaScript, Node.js (Fastify), Prisma, Next.js, PostgreSQL, HTML, CSS
-- **Systems programming:** C, C++, Linux, Unix
-- **DevOps / Infrastructure:** Docker, Docker Compose, Kubernetes, Keycloak (identity and access management)
-- **Soft skills:** Problem solving, teamwork, training/teaching, event organization, treasury management
+## Professional experience
+- Junior Developer — Hango (May 2026 – present · 6 mos): Designing a scraping system that extracts event data and enriches it so it can be stored in and displayed from Hango's database.
+- Front-End Developer — Hango (Jan 2026 – Mar 2026 · 3 mos): Built the web interface of a platform for discovering and promoting events in Switzerland, helping users easily find parties, outings and cultural events. Live: https://app.hango.ch
+- Integration Intern — Yas Madagascar (Mar 2026 – Jul 2026 · 5 mos): Designed and deployed a centralized authentication system based on Keycloak, and secured an API running in a Kubernetes cluster.
+- Transcender — 42 Antananarivo (Mar 2026 – present · 8 mos): 42 curriculum stage reached after completing the Common Core, concluded by the Transcendence project.
+- Cadet — Common Core — 42 Antananarivo (Feb 2024 – Mar 2026 · 2 yrs 2 mos): Training at 42, a school known for its fully hands-on, peer-to-peer pedagogy: solving complex problems through projects, with solid foundations in C, Linux and algorithms.
 
-## Professional Experience
-- **Intern — Yas Madagascar (March–July 2026, 4 months):** Design and deployment of a centralized authentication system based on Keycloak; secured an OSGi Apache Karaf API in a Kubernetes cluster.
-- **Trainer — Grandir Dignement Madagascar (Dec 2025–Jan 2026):** Delivered two digital literacy trainings (computers, Internet, AI, prompting, ethics) to about fifteen young people. Social impact project.
-- **Communications Manager — Student Council (BDE), 42 Antananarivo (since March 2025):** Internal communication and social media management.
-- **Trainer — Parklife (Nov 2024–Jul 2025):** Delivered two computer trainings to 130 employees (introduction to digital tools, then advanced autonomy).
-- **Treasurer & Event Organizer — Student Council (BDE), 42 Antananarivo (since March 2024):** Transparent finance management, organization of student events (outings, workshops, conferences).
+## Involvement & responsibilities
+- Treasurer — Student Council, 42 Antananarivo (Mar 2024 – Sep 2026 · 2 yrs 7 mos): Sound and transparent financial management so the Student Council could run its projects and offer students quality events and services (outings, workshops, talks).
+- Communications Manager — Student Council, 42 Antananarivo (Mar 2025 – Sep 2026 · 1 yr 7 mos): Internal communication between the Student Council and students, and management of its social media.
+- Trainer — Parklife (Nov 2024 – Dec 2024, May 2025 – Jul 2025): 130 employees trained. Introductory computer training for Parklife staff: the essential basics to use digital tools confidently every day. A second session deepening the first training's content to make participants more autonomous.
+- Trainer — Grandir Dignement Madagascar (Dec 2025, Jan 2026): Around fifteen young people trained. Two training days introducing young people to computers and the Internet, as part of a social impact project. Second training: key AI concepts, prompting techniques and ethical practices, to build critical thinking and autonomy.
+- Event — Beyond the Game (November 22, 2025, 42 Antananarivo, Galaxy Andraharo): Gaming day run by the Student Council: Tekken 8 and FC25 tournaments, showcase of games made by 42 students and free play. Partners: Mass'in, Malagasy Federation of Esports, Yas Madagascar, SOKA.
+- Event — BCode Mada (June 20, 2026, 42 Antananarivo): Programming contest organized with AlgoMada, hosted by 42 Antananarivo with official support from Yas.
+- Event — Trail KVAA 2025 (2025, Angavokely forest station): Took part in the trail with the 404.42 Student Council team and helped with the organization: a human experience full of encounters, smiles and friendliness.
 
 ## Projects
-- **Transcendence (TypeScript, Fastify, Prisma, Docker):** Real estate web platform — secure REST APIs with authentication and access control, user management, reservations, credit system.
-- **Webserv (C++):** HTTP/1.1 web server written from scratch — protocol parsing, GET/POST/DELETE, non-blocking I/O for simultaneous clients.
-- **Inception (Docker, Linux):** Multi-container infrastructure with custom images written from scratch (no Docker Hub images), orchestrated with Docker Compose.
+- Event scraping and enrichment — Hango, 2026 — in progress [Web scraping, Data enrichment, Database]: Scraping system that extracts event data, enriches it and loads it into Hango's database so the events can be shown on the platform.
+- Centralized authentication with Keycloak — Internship — Yas Madagascar, 2026 [Keycloak, Kubernetes]: Design and deployment of a centralized authentication system, and securing an API in a Kubernetes cluster.
+- Transcendence — Common Core final project — 42 [TypeScript, Fastify, Prisma, Docker]: Real estate web platform: secure REST APIs with authentication and access control, user management, reservations and a credit system. Challenges: data modeling with Prisma and full containerization with Docker.
+- Webserv — 42 curriculum — networking [C++, HTTP/1.1, Sockets]: HTTP/1.1 server written in C++ from scratch with no external library: protocol parsing, GET, POST and DELETE methods, concurrent clients handled with non-blocking I/O.
+- Inception — 42 curriculum — system administration [Docker, Docker Compose, Linux, NGINX]: Multi-container infrastructure orchestrated with Docker Compose: every service runs in a custom image written from scratch, without Docker Hub images. Challenges: inter-container networking, data persistence and configuration hardening.
+- 42 internal hackathon — 4th place — Team competition — 42 Antananarivo: Rapid prototyping and teamwork under time pressure in a competitive setting.
+- Homer Simpson Award — Stupid Hackathon — Award: Awarded for the best project pitch.
 
-## Achievements
-- **4th place — Internal Hackathon, 42 Antananarivo:** rapid prototyping and teamwork under pressure. Details: https://hackathon42.netlify.app/
-- **Homer Simpson Award — "Stupid Hackathon":** best project pitch.
-- **Certification "Concevoir et animer des Formations"** — Axian University (July 2024).
+## Skills
+- Web & full-stack development: TypeScript, JavaScript, Node.js, Fastify, Next.js, Prisma ORM, PostgreSQL, HTML, CSS
+- Cloud, DevOps & security: Docker, Docker Compose, Kubernetes (learning, beginner level), Keycloak, NGINX
+- Systems programming: C, C++, Linux / Unix, Algorithms, HTTP / sockets
+- Soft skills: Training design and delivery, Communication, Non-profit financial management, Event organization, Teamwork & peer learning
+
+## Education
+- 42 Antananarivo: Computer technology — Cadet, then Transcender (Since February 2024)
+- AXIAN University: Certification “Designing and delivering training” (July 2024)
+
+## Pages
+- [Home](https://arthinez.netlify.app/en/) / [Accueil](https://arthinez.netlify.app/)
+- [Experience](https://arthinez.netlify.app/en/experience/) / [Expériences](https://arthinez.netlify.app/experiences/)
+- [Involvement](https://arthinez.netlify.app/en/involvement/) / [Engagements](https://arthinez.netlify.app/engagements/)
+- [Projects](https://arthinez.netlify.app/en/projects/) / [Projets](https://arthinez.netlify.app/projets/)
+- [Skills](https://arthinez.netlify.app/en/skills/) / [Compétences](https://arthinez.netlify.app/competences/)
+- [About](https://arthinez.netlify.app/en/about/) / [À propos](https://arthinez.netlify.app/a-propos/)
+- [Contact](https://arthinez.netlify.app/en/contact/) / [Contact](https://arthinez.netlify.app/contact/)
 
 ## Links
-- **Portfolio:** https://arthinez.netlify.app/
-- **GitHub:** https://github.com/Hynoht
-- **LinkedIn:** https://www.linkedin.com/in/tolotra-anthony/
-- **CV (PDF):** https://arthinez.netlify.app/assets/cv_anthony.pdf
-
-## Contact Intent
-Relevant profile if you are looking for a junior full stack developer with real experience in authentication/IAM (Keycloak), containerization (Docker, Kubernetes) and solid low-level foundations (C, C++, memory management, Unix), trained through the project-based peer-learning curriculum of School 42.
+- GitHub: https://github.com/Hynoht
+- LinkedIn: https://www.linkedin.com/in/tolotra-anthony/
+- Email: dinandrianom@gmail.com
+- CV (PDF): https://arthinez.netlify.app/assets/cv_anthony.pdf

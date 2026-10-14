@@ -1,13 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://arthinez.netlify.app/</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-14</lastmod>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://arthinez.netlify.app/image/image.jpg</image:loc>
-    </image:image>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/"/>
+    <image:image><image:loc>https://arthinez.netlify.app/assets/img/portrait-og.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://arthinez.netlify.app/en/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/"/>
+    <image:image><image:loc>https://arthinez.netlify.app/assets/img/portrait-og.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://arthinez.netlify.app/experiences/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/experiences/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/en/experience/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/experiences/"/>
+  </url>
+  <url>
+    <loc>https://arthinez.netlify.app/en/experience/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/experiences/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/en/experience/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/experiences/"/>
+  </url>
+  <url>
+    <loc>https://arthinez.netlify.app/engagements/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/engagements/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/en/involvement/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/engagements/"/>
+  </url>
+  <url>
+    <loc>https://arthinez.netlify.app/en/involvement/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/engagements/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/en/involvement/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/engagements/"/>
+  </url>
+  <url>
+    <loc>https://arthinez.netlify.app/projets/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/projets/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/en/projects/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/projets/"/>
+  </url>
+  <url>
+    <loc>https://arthinez.netlify.app/en/projects/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/projets/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/en/projects/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/projets/"/>
+  </url>
+  <url>
+    <loc>https://arthinez.netlify.app/competences/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/competences/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/en/skills/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/competences/"/>
+  </url>
+  <url>
+    <loc>https://arthinez.netlify.app/en/skills/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/competences/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/en/skills/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/competences/"/>
+  </url>
+  <url>
+    <loc>https://arthinez.netlify.app/a-propos/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/a-propos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/a-propos/"/>
+  </url>
+  <url>
+    <loc>https://arthinez.netlify.app/en/about/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/a-propos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/a-propos/"/>
+  </url>
+  <url>
+    <loc>https://arthinez.netlify.app/contact/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/contact/"/>
+  </url>
+  <url>
+    <loc>https://arthinez.netlify.app/en/contact/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arthinez.netlify.app/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arthinez.netlify.app/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arthinez.netlify.app/contact/"/>
   </url>
 </urlset>
