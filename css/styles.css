@@ -276,7 +276,7 @@ main:focus { outline: none; }
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 7vw, 96px); align-items: center; }
 .split__text > p { color: var(--muted); margin-top: 16px; font-size: 1.04rem; }
 .split__text > .section-head { margin-bottom: 0; }
-.split__media { position: relative; padding: 24px 24px 40px; }
+.split__media { position: relative; isolation: isolate; padding: 24px 24px 40px; }
 .split__photo {
   position: relative; z-index: 1;
   overflow: hidden; border-radius: 62% 38% 55% 45% / 38% 60% 40% 62%;
