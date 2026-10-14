@@ -332,7 +332,7 @@ def header(lang, page):
 <header class="site-header">
   <div class="container site-header__inner">
     <a class="brand" href="{url("home", lang)}" aria-label="Arthinez — {e(NAV_LABELS["home"], lang)}">
-      <span class="brand__mark" aria-hidden="true"></span><span class="brand__name">Arthi<span>nez</span></span>
+      <span class="brand__name">Arthi<span>nez</span></span>
     </a>
     <nav class="nav" id="site-nav" aria-label="{UI[lang]["nav_label"]}">
       <ul class="nav__list">{links}</ul>
@@ -361,7 +361,7 @@ def footer(lang):
     return f'''<footer class="site-footer">
   <div class="container site-footer__grid">
     <div>
-      <a class="brand" href="{url("home", lang)}"><span class="brand__mark" aria-hidden="true"></span><span class="brand__name">Arthi<span>nez</span></span></a>
+      <a class="brand" href="{url("home", lang)}"><span class="brand__name">Arthi<span>nez</span></span></a>
       <p class="site-footer__tag">{UI[lang]["footer_tag"]}</p>
       {social_links(lang)}
     </div>

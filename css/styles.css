@@ -129,10 +129,6 @@ main:focus { outline: none; }
 .site-header__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: var(--header-h); }
 
 .brand { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; }
-.brand__mark {
-  width: 26px; height: 26px; border-radius: 50%;
-  background: radial-gradient(circle at 70% 30%, var(--cyan) 0 30%, transparent 31%), var(--pink);
-}
 .brand__name { font-family: var(--font-display); font-weight: 600; font-size: 1.45rem; color: var(--ink); letter-spacing: -.01em; }
 .brand__name span { color: var(--pink-strong); }
 

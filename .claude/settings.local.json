@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(node --check /goinfre/tolrandr/portfolio/css/i18n.js)",
-      "Bash(node --check /goinfre/tolrandr/portfolio/css/script.js)"
-    ]
-  }
-}
